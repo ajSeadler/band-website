@@ -9,7 +9,7 @@ const Video = ({ src, title }) => {
   };
 
   return (
-    <Card className="video-card" sx={{ boxShadow: "none", border: "none" }}>
+    <Card className="video-card" sx={{ boxShadow: 0, border: 0 }}>
       {isLoading && (
         <div style={{ position: "relative", width: "100%", height: "200px" }}>
           <CircularProgress

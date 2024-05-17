@@ -1,5 +1,7 @@
 // HomePage.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import { motion } from "framer-motion";
 import {
   Paper,
   Button,
@@ -86,6 +88,19 @@ const Home = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [showScrollDownText, setShowScrollDownText] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      setShowScrollDownText(scrollPosition === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const images = [
     "/pics/compressed/Nat.jpg",
@@ -128,6 +143,7 @@ const Home = () => {
   };
 
   return (
+    <>
     <div className="home-pg">
       {/* Hero Section */}
       <HeroSection
@@ -174,8 +190,6 @@ const Home = () => {
           marginTop: "0px",
           background: `url(/2.svg)`,
           backgroundSize: "cover",
-          borderRadius: 0,
-          boxShadow: "0px 0px 0px 0px rgba(0,0,0,0)",
           border: "none",
         }}
       >
@@ -188,6 +202,35 @@ const Home = () => {
         <ContactUs />
       </Paper>
     </div>
+    {showScrollDownText && (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 2.5, type: "spring", stiffness: 200, damping: 10 }}
+        className="scroll-down-container"
+        style={{
+          position: "fixed",
+          zIndex: 3,
+          bottom: "20px",
+          left: "50px",
+          right:'50px',
+          transform: "translateX(-50%)",
+          color: "#fff",
+          fontSize: "16px",
+          fontWeight: 100,
+          padding: "10px 20px",
+          margin:'0px',
+          borderRadius: "5px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ marginTop: "10px", fontFamily:'Bebas Neue' }}>Scroll down</div>
+        <ArrowDownwardIcon fontSize="small" />
+      </motion.div>
+    )}
+    </>
   );
 };
 

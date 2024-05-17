@@ -21,17 +21,14 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const ShowsPaper = styled(Paper)(({ theme }) => ({
   padding: "50px",
-  marginTop: "-3%",
   background: "#001220",
-  boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
-
+  marginTop: "-5%",
   [theme.breakpoints.down("sm")]: {
-    marginTop: "-10%",
+    marginTop: "-15%", // Margin for mobile screens
   },
 }));
 
 const ShowsContainer = styled(Grid)(({ theme }) => ({
-  marginTop: "10px",
   display: "flex",
   justifyContent: "flex-start",
 }));
@@ -141,7 +138,7 @@ const Shows = () => {
       )}
 
       {!loading && (
-        <ShowsPaper elevation={3}>
+        <ShowsPaper elevation={0}>
           {/* <div className="custom-font-shows">
           </div> */}
           <div className="custom-font-shows">

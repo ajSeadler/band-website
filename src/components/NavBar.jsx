@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -10,17 +10,18 @@ import {
   ListItem,
   ListItemText,
   useMediaQuery,
+  Box
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const isMobile = useMediaQuery("(max-width:600px)");
-  const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [showNavBar, setShowNavBar] = useState(true);
 
   const toggleDrawer = (open) => (event) => {
     if (
-      // cool i guess, not like anyone would be able to use it though (shift & tab for mobile drawer)
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
     ) {
@@ -38,17 +39,6 @@ const NavBar = () => {
         color: "#fff"
       }}
     >
-      <Typography
-        variant="h6"
-        style={{
-          textAlign: "center",
-          margin: "10px",
-          color: "#FFF",
-          fontFamily: "Oswald",
-        }}
-      >
-        DISCO STRANGER
-      </Typography>
       <ListItem button component={Link} to="/">
         <ListItemText primary="Home" />
       </ListItem>
@@ -64,21 +54,49 @@ const NavBar = () => {
     </List>
   );
 
-  //
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // Scroll Down
+        setShowNavBar(false);
+      } else {
+        // Scroll Up
+        setShowNavBar(true);
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <AppBar
       position="sticky"
       sx={{
-        background: `url("/testwave.svg")`,
+        background: `transparent`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         border: "none",
         boxShadow: "none",
         zIndex: 1,
+        transform: showNavBar ? "translateY(0)" : "translateY(-100%)",
+        transition: "transform 0.3s ease-in-out",
       }}
     >
       <Toolbar>
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{ flexGrow: 1, color: "#fff", fontFamily:'YourCustomFont' }}
+        >
+          DISCO STRANGER
+        </Typography>
         {isMobile ? (
           <>
             <IconButton
@@ -112,12 +130,6 @@ const NavBar = () => {
           </>
         ) : (
           <>
-            {/* Logo image */}
-            {/* <img
-              src="/pics/whitelogo.PNG"
-              alt="Your Band Logo"
-              style={{ height: "50px", marginRight: "auto" }}
-            /> */}
             {/* Navigation buttons */}
             <div>
               <Button

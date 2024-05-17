@@ -1,3 +1,4 @@
+
 * {
   margin: 0px;
   padding: 0px;
@@ -142,29 +143,49 @@ h1 {
 }
 
 .bio {
-  background: #2a7f62;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.custom-shape-divider-bottom-1706069005 {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+.psychedelic-title {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3rem;
+  color: #563256;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff8000, 0 0 15px #ffff00, 
+               0 0 20px #00ff00, 0 0 25px #00ffff, 0 0 30px #0000ff, 
+               0 0 35px #8000ff;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: glow 1.5s infinite alternate;
 }
 
-.custom-shape-divider-bottom-1706069005 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 318px;
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff8000, 0 0 15px #ffff00, 
+                 0 0 20px #00ff00, 0 0 25px #00ffff, 0 0 30px #0000ff, 
+                 0 0 35px #8000ff;
+  }
+  to {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff8000, 0 0 30px #ffff00, 
+                 0 0 40px #00ff00, 0 0 50px #00ffff, 0 0 60px #0000ff, 
+                 0 0 70px #8000ff;
+  }
 }
 
-.custom-shape-divider-bottom-1706069005 .shape-fill {
-  fill: #2a7f62;
+.bio {
+  background-image: url("/pics/compressed/fullband-mobile.JPG");
 }
 
-.shape-fill {
-  fill: #2a7f62;
+.bio-desktop {
+  background-image: url("/pics/compressed/bluePink.jpg");
+}
+
+@media (min-width: 768px) {
+  .bio {
+    background-image: url("/pics/compressed/bluePink.jpg");
+  }
 }
 
 .video-section {
@@ -182,9 +203,6 @@ h1 {
 .scroll-down-arrow.bounce {
   transform: translateY(-10px); /* Adjust the bounce distance as needed */
 }
-
-
-
 
 
 @keyframes bounce {

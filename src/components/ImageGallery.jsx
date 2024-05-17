@@ -15,7 +15,6 @@ const ImageGallery = () => {
     "./pics/compressed/drewdeepE.jpg",
     "./pics/compressed/coltondeepE.jpg",
     "./pics/compressed/ajdeepE.jpg",
-    "./pics/compressed/drew2bc.JPEG",
   ];
 
   const [loading, setLoading] = useState(true);

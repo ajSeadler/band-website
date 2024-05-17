@@ -27,7 +27,7 @@ const SocialIcons = styled.div`
 
 const Contact = () => {
   return (
-    <div className='cont-pg' style={{ display: 'flex', flexDirection: 'column',background: '#001220', minHeight: '85.1vh', marginTop:'-20%' }}>
+    <div className='cont-pg' style={{ display: 'flex', flexDirection: 'column',background: '#000', minHeight: '85.1vh', marginTop:'-20%' }}>
       <Container maxWidth="md" style={{marginTop:'20%'}}>
         <Paper elevation={3} style={{ padding: '30px', marginTop: '15%', borderRadius: '15px' }}>
           <Typography variant="h5" gutterBottom style={{fontFamily: 'Gasoek One'}}>

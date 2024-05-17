@@ -21,7 +21,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const ShowsPaper = styled(Paper)(({ theme }) => ({
   padding: "50px",
-  background: "#001220",
+  background: "#000",
   marginTop: "-5%",
   [theme.breakpoints.down("sm")]: {
     marginTop: "-15%", // Margin for mobile screens
@@ -150,7 +150,7 @@ const Shows = () => {
                 <ShowCard onClick={() => handleCardClick(show)}>
                   <ShowImage src={show.image} alt={`Band Picture ${index}`} />
                   <ShowCardContent>
-                    <Typography variant="h6">{show.title}</Typography>
+                    <h6 style={{fontSize:'1.3rem', textDecoration:'underline'}}>{show.title}</h6>
                     <Typography>
                       <EventIcon /> {show.date}
                     </Typography>
@@ -182,7 +182,7 @@ const Shows = () => {
                 <ShowCard onClick={() => handleCardClick(show)}>
                   <ShowImage src={show.image} alt={`Band Picture ${index}`} />
                   <ShowCardContent>
-                    <Typography variant="h6">{show.title}</Typography>
+                  <h6 style={{fontSize:'1.3rem', textDecoration:'underline'}}>{show.title}</h6>
                     <Typography>
                       <EventIcon /> {show.date}
                     </Typography>
@@ -208,7 +208,7 @@ const Shows = () => {
                 <Button
                   key={pageNumber + 1}
                   onClick={() => paginate(pageNumber + 1)}
-                  style={{ color: "rgb(237, 102, 87)" }}
+                  style={{ color: "#dfd" }}
                 >
                   {pageNumber + 1}
                 </Button>

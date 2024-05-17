@@ -38,8 +38,7 @@ const Home = () => {
           style={{
             padding: "20px",
             marginTop: "0px",
-            background: `url(/2.svg)`,
-            backgroundSize: "cover",
+            backgroundColor: '#000',
             border: "none",
           }}
         >

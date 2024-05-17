@@ -125,8 +125,8 @@ const StyledContactForm = styled.div`
     input[type="submit"] {
       margin-top: 2rem;
       cursor: pointer;
-      background: #70877F;
-      color: black;
+      background: #dfd;
+      color: "#fff";
       border: none;
     }
   }

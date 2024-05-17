@@ -13,7 +13,9 @@ import {
   Box
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
+import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const NavBar = () => {
   const isMobile = useMediaQuery("(max-width:600px)");
@@ -35,19 +37,48 @@ const NavBar = () => {
       style={{
         position: "relative",
         height: "100%",
-        backgroundColor: "#001220",
-        color: "#fff"
+        backgroundColor: "#000",
+        color: "#fff",
+        paddingTop: "20px",
       }}
     >
-      <ListItem button component={Link} to="/">
+      <IconButton
+        size="large"
+        edge="end"
+        color="inherit"
+        aria-label="close"
+        onClick={toggleDrawer(false)}
+        sx={{ position: 'absolute', right: 0, marginRight: 2 }}
+      >
+        <CloseIcon />
+      </IconButton>
+      <Typography sx={{ margin: '10px' }}>DISCO STRANGER</Typography>
+      <ListItem button component={Link} to="/" onClick={toggleDrawer(false)}>
         <ListItemText primary="Home" />
       </ListItem>
-      <ListItem button component={Link} to="/shows">
+      <ListItem button component={Link} to="/shows" onClick={toggleDrawer(false)}>
         <ListItemText primary="Shows" />
       </ListItem>
-      <ListItem button component={Link} to="/contact">
+      <ListItem button component={Link} to="/contact" onClick={toggleDrawer(false)}>
         <ListItemText primary="Contact" />
       </ListItem>
+      <Box sx={{ position: 'absolute', bottom: 0, width: '100%', textAlign: 'center', paddingBottom: 2 }}>
+        <a href="https://open.spotify.com/artist/3SwSE7OtWzLOrc32Eq54gO" target="_blank" rel="noopener noreferrer">
+          <FaSpotify className="icon" size={30} style={{ margin: '0 10px', color:'#fff' }} />
+        </a>
+        <a href="https://music.apple.com/us/artist/disco-stranger/1529203061" target="_blank" rel="noopener noreferrer">
+          <FaApple className="icon" size={30} style={{ margin: '0 10px', color:'#fff' }} />
+        </a>
+        <a href="https://www.youtube.com/@discostranger7103" target="_blank" rel="noopener noreferrer">
+          <FaYoutube className="icon" size={30} style={{ margin: '0 10px', color:'#fff' }} />
+        </a>
+        <a href="https://www.instagram.com/discostranger/?hl=en" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="icon" size={30} style={{ margin: '0 10px', color:'#fff' }} />
+        </a>
+        <a href="https://www.facebook.com/discostrangerband/" target="_blank" rel="noopener noreferrer">
+          <FaFacebook className="icon" size={30} style={{ margin: '0 10px', color:'#fff' }} />
+        </a>
+      </Box>
     </List>
   );
 
@@ -76,7 +107,7 @@ const NavBar = () => {
     <AppBar
       position="sticky"
       sx={{
-        background: `transparent`,
+        background: `#000`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         border: "none",
@@ -90,7 +121,7 @@ const NavBar = () => {
         <Typography
           variant="h6"
           component="div"
-          sx={{ flexGrow: 1, color: "#fff", fontFamily:'YourCustomFont' }}
+          sx={{ flexGrow: 1, color: "#fff", fontFamily: 'YourCustomFont' }}
         >
           DISCO STRANGER
         </Typography>
@@ -103,22 +134,16 @@ const NavBar = () => {
               aria-label="menu"
               onClick={toggleDrawer(true)}
             >
-              <MenuIcon />
+              {drawerOpen ? <CloseIcon /> : <MenuIcon />}
             </IconButton>
             <Drawer
               anchor="top"
               open={drawerOpen}
-              onClick={toggleDrawer(false)}
-              style={{
-                width: "60%",
-                position: "absolute",
-                top: "80%",
-                marginTop: "25px",
-                fontFamily: "YourCustomFont",
-              }}
+              onClose={toggleDrawer(false)}
               PaperProps={{
                 style: {
-                  backgroundColor: "#f5f5f5",
+                  backgroundColor: "#000",
+                  height: "100vh",
                 },
               }}
             >

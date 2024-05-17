@@ -30,10 +30,10 @@ const Video = ({ src, title }) => {
         onLoad={handleLoad}
         sx={{ boxShadow: "none", border: "none", display: isLoading ? "none" : "block" }}
       />
-      <CardContent style={{ backgroundColor: "#2A7F62" }}>
+      <CardContent style={{ backgroundColor: 'transparent' }}>
         <Typography
           variant="body1"
-          color="white"
+          
           style={{ fontFamily: "YourCustomFont" }}
         >
           {title}

@@ -42,9 +42,6 @@ const NavBar = () => {
       <ListItem button component={Link} to="/">
         <ListItemText primary="Home" />
       </ListItem>
-      <ListItem button component={Link} to="/about">
-        <ListItemText primary="About" />
-      </ListItem>
       <ListItem button component={Link} to="/shows">
         <ListItemText primary="Shows" />
       </ListItem>
@@ -139,14 +136,6 @@ const NavBar = () => {
                 to="/"
               >
                 Home
-              </Button>
-              <Button
-                style={{ fontFamily: "Gasoek One" }}
-                color="inherit"
-                component={Link}
-                to="/about"
-              >
-                About
               </Button>
               <Button
                 style={{ fontFamily: "Gasoek One" }}

@@ -30,7 +30,7 @@ const Video = ({ src, title }) => {
         onLoad={handleLoad}
         sx={{ boxShadow: "none", border: "none", display: isLoading ? "none" : "block" }}
       />
-      <CardContent style={{ backgroundColor: 'transparent' }}>
+      <CardContent style={{ backgroundColor: '#89909F', color:'#fff' }}>
         <Typography
           variant="body1"
           
@@ -50,10 +50,10 @@ const Media = () => {
     <Typography
     variant="h4"
     gutterBottom
-    style={{ color: "white", fontFamily: "Bebas Neue" }}
+    style={{ color: "white", fontFamily: "Gasoek One", fontSize:'1.4rem' }}
     className="video-sec-mobile"
   >
-    Watch Our Latest Videos
+    WATCH OUR LATEST VIDEOS
   </Typography>
 
     <div className="video-home" style={{ border: "none", boxShadow: "none" }}>

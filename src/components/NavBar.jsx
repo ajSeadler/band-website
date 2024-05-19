@@ -52,15 +52,15 @@ const NavBar = () => {
       >
         <CloseIcon />
       </IconButton>
-      <Typography sx={{ margin: '10px' }}>DISCO STRANGER</Typography>
+      <Typography sx={{ margin: '10px', fontSize: '1.8rem', textAlign: 'center' }}>DISCO STRANGER</Typography>
       <ListItem button component={Link} to="/" onClick={toggleDrawer(false)}>
-        <ListItemText primary="Home" />
+        <ListItemText primary="Home" primaryTypographyProps={{ style: { fontSize: '1.5rem' } }} />
       </ListItem>
       <ListItem button component={Link} to="/shows" onClick={toggleDrawer(false)}>
-        <ListItemText primary="Shows" />
+        <ListItemText primary="Shows" primaryTypographyProps={{ style: { fontSize: '1.5rem' } }} />
       </ListItem>
       <ListItem button component={Link} to="/contact" onClick={toggleDrawer(false)}>
-        <ListItemText primary="Contact" />
+        <ListItemText primary="Contact" primaryTypographyProps={{ style: { fontSize: '1.5rem' } }} />
       </ListItem>
       <Box sx={{ position: 'absolute', bottom: 0, width: '100%', textAlign: 'center', paddingBottom: 2 }}>
         <a href="https://open.spotify.com/artist/3SwSE7OtWzLOrc32Eq54gO" target="_blank" rel="noopener noreferrer">
@@ -111,6 +111,7 @@ const NavBar = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         border: "none",
+        padding:'10px',
         boxShadow: "none",
         zIndex: 1,
         transform: showNavBar ? "translateY(0)" : "translateY(-100%)",
@@ -121,7 +122,7 @@ const NavBar = () => {
         <Typography
           variant="h6"
           component="div"
-          sx={{ flexGrow: 1, color: "#fff", fontFamily: 'YourCustomFont' }}
+          sx={{ flexGrow: 1, color: "#fff", fontFamily: 'YourCustomFont', fontSize:'1.6rem', marginRight:'10%' }}
         >
           DISCO STRANGER
         </Typography>
@@ -156,14 +157,14 @@ const NavBar = () => {
             <div>
               <Button
                 color="inherit"
-                style={{ fontFamily: "Gasoek One" }}
+                style={{ fontFamily: "Gasoek One", fontSize: '1.2rem' }}
                 component={Link}
                 to="/"
               >
                 Home
               </Button>
               <Button
-                style={{ fontFamily: "Gasoek One" }}
+                style={{ fontFamily: "Gasoek One", fontSize: '1.2rem' }}
                 color="inherit"
                 component={Link}
                 to="/shows"
@@ -171,7 +172,7 @@ const NavBar = () => {
                 Shows
               </Button>
               <Button
-                style={{ fontFamily: "Gasoek One" }}
+                style={{ fontFamily: "Gasoek One", fontSize: '1.2rem' }}
                 color="inherit"
                 component={Link}
                 to="/contact"

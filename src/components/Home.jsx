@@ -9,6 +9,7 @@ import ContactUs from "./ContactUs";
 import Streaming from "./Streaming";
 import Media from "./Media";
 import AboutUs from "./AboutUs";
+import UpcomingShows from "./UpcomingShows"
 
 const Home = () => {
   const [showScrollDownText, setShowScrollDownText] = useState(true);
@@ -42,6 +43,7 @@ const Home = () => {
             border: "none",
           }}
         >
+          <UpcomingShows />
           <Media />
           <Streaming />
           <AboutUs />

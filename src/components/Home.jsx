@@ -10,6 +10,7 @@ import Streaming from "./Streaming";
 import Media from "./Media";
 import AboutUs from "./AboutUs";
 import UpcomingShows from "./UpcomingShows"
+import SpinnerBanner from "./SpinnerBanner";
 
 const Home = () => {
   const [showScrollDownText, setShowScrollDownText] = useState(true);
@@ -31,18 +32,18 @@ const Home = () => {
     <>
       <div className="home-pg">
         <div className={`bio text-white p-3 p-md-5`}></div>
-
-        {/* This section follows the hero section */}
+        <SpinnerBanner />
         <Paper
           className="video-section"
           elevation={1}
           style={{
-            padding: "20px",
+            padding: "15px",
             marginTop: "0px",
             backgroundColor: '#000',
             border: "none",
           }}
         >
+          
           <UpcomingShows />
           <Media />
           <Streaming />

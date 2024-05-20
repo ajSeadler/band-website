@@ -9,7 +9,7 @@ const Video = ({ src, title }) => {
   };
 
   return (
-    <Card className="video-card" sx={{ boxShadow: 0, border: 0 }}>
+    <Card className="video-card" sx={{ boxShadow: 0, border: 0, backgroundColor:'transparent' }}>
       {isLoading && (
         <div style={{ position: "relative", width: "100%", height: "200px" }}>
           <CircularProgress
@@ -30,7 +30,7 @@ const Video = ({ src, title }) => {
         onLoad={handleLoad}
         sx={{ boxShadow: "none", border: "none", display: isLoading ? "none" : "block" }}
       />
-      <CardContent style={{ backgroundColor: '#89909F', color:'#fff' }}>
+      <CardContent style={{  color:'#fff' }}>
         <Typography
           variant="body1"
           
@@ -47,14 +47,12 @@ const Media = () => {
   return (
     <>
 
-    <Typography
-    variant="h4"
-    gutterBottom
-    style={{ color: "white", fontFamily: "Gasoek One", fontSize:'1.4rem' }}
-    className="video-sec-mobile"
+    <h2
+    style={{ color: "white", fontFamily: "Gasoek One", fontSize:'1.5rem' }}
+    className="home-shows"
   >
     WATCH OUR LATEST VIDEOS
-  </Typography>
+  </h2>
 
     <div className="video-home" style={{ border: "none", boxShadow: "none" }}>
       {/* First Video */}

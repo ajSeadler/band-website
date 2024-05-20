@@ -65,7 +65,7 @@ const Contact = () => {
 
   return (
     <StyledContactForm>
-      <Title>CHAT WITH US!</Title>
+      <Title>BOOKING</Title>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="from_name" />
@@ -125,8 +125,9 @@ const StyledContactForm = styled.div`
     input[type="submit"] {
       margin-top: 2rem;
       cursor: pointer;
-      background: #dfd;
+      background: #89909F;
       color: "#fff";
+      font-family:"Bebas Neue";
       border: none;
     }
   }

@@ -162,12 +162,12 @@ h1 {
 }
 
 .bio-desktop {
-  background-image: url("/pics/compressed/desk-home.JPG");
+  background-image: url("/pics/desk-home.JPG");
 }
 
 @media (min-width: 768px) {
   .bio {
-    background-image: url("/pics/compressed/desk-home.JPG");
+    background-image: url("/pics/desk-home.JPG");
   }
 }
 

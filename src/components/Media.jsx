@@ -48,7 +48,7 @@ const Media = () => {
     <>
 
     <h2
-    style={{ color: "white", fontFamily: "Gasoek One", fontSize:'1.5rem' }}
+    style={{ color: "white", fontFamily: "Gasoek One", fontSize:'2.5rem', textAlign:'center', margin:'5%' }}
     className="home-shows"
   >
     WATCH OUR LATEST VIDEOS

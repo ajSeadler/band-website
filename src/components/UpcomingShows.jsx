@@ -7,7 +7,6 @@ import {
   CardContent,
   Dialog,
   DialogContent,
-  Button,
   IconButton,
 } from "@mui/material";
 import { styled } from "@mui/system";
@@ -23,11 +22,20 @@ const ShowsPaper = styled(Paper)(({ theme }) => ({
   padding: "10px",
   background: "#000",
   marginBottom: "2%",
+  width: '100%',
 }));
 
 const ShowsContainer = styled(Grid)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "flex-start",
+  display: 'flex',
+  flexDirection: 'column',
+  margin: '0 auto',
+  padding: 0,
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '100%',
+  [theme.breakpoints.down('sm')]: {
+    padding: '0 10px',
+  },
 }));
 
 const ShowCard = styled(Card)(({ theme }) => ({
@@ -35,8 +43,6 @@ const ShowCard = styled(Card)(({ theme }) => ({
   flexDirection: "column",
   backgroundColor: "#89909F",
   color: "white",
-  maxHeight: "100%",
-  height: "100%",
   overflow: "hidden",
   cursor: "pointer",
   transition: "transform 0.2s ease-in-out",
@@ -49,16 +55,16 @@ const ShowCardContent = styled(CardContent)(({ theme }) => ({
   flexGrow: 1,
   display: "flex",
   flexDirection: "column",
-  alignItems: "left",
+  alignItems: "flex-start",
+  padding: "10px",
 }));
 
 const ShowImage = styled("img")(({ theme }) => ({
   width: "100%",
-  height: "100%",
-  maxHeight: "100%",
+  height: "auto",
   borderRadius: "0px",
   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-  objectFit: "contain",
+  objectFit: "cover",
 }));
 
 const FullImageDialog = styled(Dialog)(({ theme }) => ({
@@ -87,7 +93,7 @@ const UpcomingShows = () => {
     // Simulating loading time
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 0); // Adjust the time as needed
+    }, 1000); // Adjust the time as needed
 
     // Cleanup function to clear the timeout
     return () => clearTimeout(timer);
@@ -115,7 +121,9 @@ const UpcomingShows = () => {
         {!loading && (
           <ShowsPaper elevation={0}>
             <div className="home-shows">
-              <h2>UPCOMING SHOWS</h2>
+              <h2 style={{ color: 'white', textAlign: 'center', margin: '20px 0', fontSize:'2.5rem' }}>
+                UPCOMING SHOWS
+              </h2>
             </div>
             <ShowsContainer container spacing={2}>
               {shows.map((show, index) => (
@@ -123,18 +131,18 @@ const UpcomingShows = () => {
                   <ShowCard onClick={() => handleCardClick(show)}>
                     <ShowImage src={show.image} alt={`Band Picture ${index}`} />
                     <ShowCardContent>
-                      <h6 style={{ fontSize: '1.3rem', textDecoration: 'underline' }}>{show.title}</h6>
-                      <Typography>
-                        <EventIcon /> {show.date}
+                      <Typography variant="h6" style={{ fontSize: '1rem', textDecoration: 'underline' }}>{show.title}</Typography>
+                      <Typography variant="body2">
+                        <EventIcon fontSize="small" /> {show.date}
                       </Typography>
-                      <Typography>
-                        <ScheduleIcon /> {show.time}
+                      <Typography variant="body2">
+                        <ScheduleIcon fontSize="small" /> {show.time}
                       </Typography>
-                      <Typography>
-                        <MonetizationOnIcon /> {show.price}
+                      <Typography variant="body2">
+                        <MonetizationOnIcon fontSize="small" /> {show.price}
                       </Typography>
-                      <Typography>
-                        <LocationOnIcon /> {show.location}
+                      <Typography variant="body2">
+                        <LocationOnIcon fontSize="small" /> {show.location}
                       </Typography>
                     </ShowCardContent>
                   </ShowCard>

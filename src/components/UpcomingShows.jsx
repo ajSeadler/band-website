@@ -8,6 +8,7 @@ import {
   Dialog,
   DialogContent,
   IconButton,
+  Link,
 } from "@mui/material";
 import { styled } from "@mui/system";
 import CloseIcon from "@mui/icons-material/Close";
@@ -17,6 +18,7 @@ import EventIcon from "@mui/icons-material/Event";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Link as RouterLink } from "react-router-dom";
 
 const ShowsPaper = styled(Paper)(({ theme }) => ({
   padding: "10px",
@@ -121,33 +123,49 @@ const UpcomingShows = () => {
         {!loading && (
           <ShowsPaper elevation={0}>
             <div className="home-shows">
-              <h2 style={{ color: 'white', textAlign: 'center', margin: '20px 0', fontSize:'2.5rem' }}>
+              <h4 style={{ color: 'white', textAlign: 'center', margin: '20px 0', fontSize:'2.5rem' }}>
                 UPCOMING SHOWS
-              </h2>
+              </h4>
             </div>
             <ShowsContainer container spacing={2}>
-              {shows.map((show, index) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                  <ShowCard onClick={() => handleCardClick(show)}>
-                    <ShowImage src={show.image} alt={`Band Picture ${index}`} />
-                    <ShowCardContent>
-                      <Typography variant="h6" style={{ fontSize: '1rem', textDecoration: 'underline' }}>{show.title}</Typography>
-                      <Typography variant="body2">
-                        <EventIcon fontSize="small" /> {show.date}
-                      </Typography>
-                      <Typography variant="body2">
-                        <ScheduleIcon fontSize="small" /> {show.time}
-                      </Typography>
-                      <Typography variant="body2">
-                        <MonetizationOnIcon fontSize="small" /> {show.price}
-                      </Typography>
-                      <Typography variant="body2">
-                        <LocationOnIcon fontSize="small" /> {show.location}
-                      </Typography>
-                    </ShowCardContent>
-                  </ShowCard>
-                </Grid>
-              ))}
+              {shows.length === 0 ? (
+                <div style={{ textAlign: 'center', color: 'white', margin: '20px' }}>
+                  <Typography variant="body1" style={{ display: 'inline' }}>
+                    No upcoming shows
+                  </Typography>
+                  <Link
+                    component={RouterLink}
+                    to="/contact"
+                    variant="body1"
+                    style={{ marginLeft: '5px', color: 'white', textDecoration: 'underline', fontFamily:'Oswald' }}
+                  >
+                    Want to change that?
+                  </Link>
+                </div>
+              ) : (
+                shows.map((show, index) => (
+                  <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                    <ShowCard onClick={() => handleCardClick(show)}>
+                      <ShowImage src={show.image} alt={`Band Picture ${index}`} />
+                      <ShowCardContent>
+                        <Typography variant="h6" style={{ fontSize: '1rem', textDecoration: 'underline' }}>{show.title}</Typography>
+                        <Typography variant="body2">
+                          <EventIcon fontSize="small" /> {show.date}
+                        </Typography>
+                        <Typography variant="body2">
+                          <ScheduleIcon fontSize="small" /> {show.time}
+                        </Typography>
+                        <Typography variant="body2">
+                          <MonetizationOnIcon fontSize="small" /> {show.price}
+                        </Typography>
+                        <Typography variant="body2">
+                          <LocationOnIcon fontSize="small" /> {show.location}
+                        </Typography>
+                      </ShowCardContent>
+                    </ShowCard>
+                  </Grid>
+                ))
+              )}
             </ShowsContainer>
           </ShowsPaper>
         )}

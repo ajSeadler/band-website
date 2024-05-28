@@ -1,4 +1,8 @@
 const shows = [
+  
+];
+
+const pastShows = [
   {
     title: "Paseo Arts Festival",
     date: 'May 26th, 2024',
@@ -15,9 +19,6 @@ const shows = [
     image: "/BMF.PNG",
     location:'Lower Scissortail Park'
   },
-];
-
-const pastShows = [
   {
     title: "The Opolis",
     date: 'February 1st, 2024',

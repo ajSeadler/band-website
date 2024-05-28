@@ -28,7 +28,7 @@ p {
 }
 
 .shows-pg {
-  background: #000;
+  background: transparent;
   position: relative;
 }
 
@@ -54,20 +54,17 @@ p {
   position: relative; /* Ensure the loader-overlay is positioned relative to this */
 }
 
-.ds h3 {
-  font-size: 5rem;
-}
 
 @font-face {
   font-family: "YourCustomFont";
-  src: url("/public/GasoekOne-Regular.ttf") format("truetype");
+  src: url("/GasoekOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 h1 {
   font-family: "YourCustomFont";
-  font-size: 4rem;
+  
 }
 
 .custom-font {

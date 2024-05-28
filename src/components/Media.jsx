@@ -47,12 +47,12 @@ const Media = () => {
   return (
     <>
 
-    <h2
-    style={{ color: "white", fontFamily: "Gasoek One", fontSize:'2.5rem', textAlign:'center', margin:'5%' }}
+    <h4
+    style={{ color: "white", fontFamily: "Gasoek One", fontSize:'2.2rem', textAlign:'center', margin:'5%' }}
     className="home-shows"
   >
     WATCH OUR LATEST VIDEOS
-  </h2>
+  </h4>
 
     <div className="video-home" style={{ border: "none", boxShadow: "none" }}>
       {/* First Video */}

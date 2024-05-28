@@ -47,8 +47,8 @@ const Home = () => {
           <UpcomingShows />
           <Media />
           <Streaming />
-          <AboutUs />
-          <ContactUs />
+          {/* <AboutUs />
+          <ContactUs /> */}
         </Paper>
       </div>
       {showScrollDownText && (

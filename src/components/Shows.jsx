@@ -21,7 +21,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const ShowsPaper = styled(Paper)(({ theme }) => ({
   padding: "50px",
-  background: "#000",
+  background: "transparent",
   marginTop: "-5%",
   [theme.breakpoints.down("sm")]: {
     marginTop: "-15%", // Margin for mobile screens
@@ -145,28 +145,13 @@ const Shows = () => {
             <h1>UPCOMING SHOWS</h1>
           </div>
           <ShowsContainer container spacing={4} style={{ marginBottom: "3%" }}>
-            {shows.map((show, index) => (
-              <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                <ShowCard onClick={() => handleCardClick(show)}>
-                  <ShowImage src={show.image} alt={`Band Picture ${index}`} />
-                  <ShowCardContent>
-                    <h6 style={{fontSize:'1.3rem', textDecoration:'underline'}}>{show.title}</h6>
-                    <Typography>
-                      <EventIcon /> {show.date}
-                    </Typography>
-                    <Typography>
-                      <ScheduleIcon /> {show.time}
-                    </Typography>
-                    <Typography>
-                      <MonetizationOnIcon /> {show.price}
-                    </Typography>
-                    <Typography>
-                      <LocationOnIcon /> {show.location}
-                    </Typography>
-                  </ShowCardContent>
-                </ShowCard>
-              </Grid>
-            ))}
+            <div style={{ textAlign: 'center', color: 'white', margin: '20px' }}>
+                  <Typography variant="body1" style={{ display: 'inline', margin:'20px',
+                marginTop:'20px' }}>
+                    No upcoming shows
+                  </Typography>
+                  
+                </div>
           </ShowsContainer>
 
           <div className="custom-font-shows">

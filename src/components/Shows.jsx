@@ -22,9 +22,9 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 const ShowsPaper = styled(Paper)(({ theme }) => ({
   padding: "50px",
   background: "transparent",
-  marginTop: "-5%",
+  marginTop: "0vh", // Added top margin to move content down
   [theme.breakpoints.down("sm")]: {
-    marginTop: "-15%", // Margin for mobile screens
+    marginTop: "15vh", // Margin for mobile screens
   },
 }));
 
@@ -66,10 +66,6 @@ const ShowImage = styled("img")(({ theme }) => ({
 
 const FullImageDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialog-paper": {
-    // maxWidth: '50%',
-    // width: '80%',
-    // maxHeight: '50%',
-    // height: '80%',
     overflow: "hidden",
   },
 }));
@@ -139,19 +135,20 @@ const Shows = () => {
 
       {!loading && (
         <ShowsPaper elevation={0}>
-          {/* <div className="custom-font-shows">
-          </div> */}
           <div className="custom-font-shows">
             <h1>UPCOMING SHOWS</h1>
           </div>
           <ShowsContainer container spacing={4} style={{ marginBottom: "3%" }}>
-            <div style={{ textAlign: 'center', color: 'white', margin: '20px' }}>
-                  <Typography variant="body1" style={{ display: 'inline', margin:'20px',
-                marginTop:'20px' }}>
-                    No upcoming shows
-                  </Typography>
-                  
-                </div>
+            <div
+              style={{ textAlign: "center", color: "white", margin: "20px" }}
+            >
+              <Typography
+                variant="body1"
+                style={{ display: "inline", margin: "20px", marginTop: "20px" }}
+              >
+                No upcoming shows
+              </Typography>
+            </div>
           </ShowsContainer>
 
           <div className="custom-font-shows">
@@ -167,7 +164,14 @@ const Shows = () => {
                 <ShowCard onClick={() => handleCardClick(show)}>
                   <ShowImage src={show.image} alt={`Band Picture ${index}`} />
                   <ShowCardContent>
-                  <h6 style={{fontSize:'1.3rem', textDecoration:'underline'}}>{show.title}</h6>
+                    <h6
+                      style={{
+                        fontSize: "1.3rem",
+                        textDecoration: "underline",
+                      }}
+                    >
+                      {show.title}
+                    </h6>
                     <Typography>
                       <EventIcon /> {show.date}
                     </Typography>

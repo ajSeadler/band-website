@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Paper, Typography, Link } from '@mui/material';
 import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa';
 import styled from 'styled-components';
-import ContactUs from './ContactUs'
+import ContactUs from './ContactUs';
 
 const SocialIcons = styled.div`
   display: flex;
@@ -21,10 +21,9 @@ const SocialIcons = styled.div`
 
 const Contact = () => {
   return (
-    <>
-    <div style={{ marginTop: '0%' }}> {/* Adjusted positioning */}
-      <Container maxWidth="md" style={{width:'100%', height:'100vh'}}>
-        <Paper elevation={3} style={{ padding: '30px', borderRadius: '15px' }}>
+    <div style={{ height: '100vh' }}> {/* Ensuring full viewport height */}
+      <Container maxWidth="md" style={{ width: '100%', marginTop: '25vh' }}> {/* Added top margin */}
+        <Paper elevation={3} style={{ padding: '30px', borderRadius: '0px' }}>
           <Typography variant="h5" gutterBottom style={{ fontFamily: 'Gasoek One' }}>
             CONTACT
           </Typography>
@@ -57,13 +56,10 @@ const Contact = () => {
               <FaFacebook size={30} />
             </a>
           </SocialIcons>
-          
         </Paper>
         <ContactUs />
-        
       </Container> 
     </div>
-    </>
   );
 };
 

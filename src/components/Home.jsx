@@ -2,14 +2,12 @@
 import React, { useState, useEffect } from "react";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { motion } from "framer-motion";
-import {
-  Paper,
-} from "@mui/material";
+import { Paper } from "@mui/material";
 import ContactUs from "./ContactUs";
 import Streaming from "./Streaming";
 import Media from "./Media";
 import AboutUs from "./AboutUs";
-import UpcomingShows from "./UpcomingShows"
+import UpcomingShows from "./UpcomingShows";
 import SpinnerBanner from "./SpinnerBanner";
 
 const Home = () => {
@@ -39,11 +37,13 @@ const Home = () => {
           style={{
             padding: "15px",
             marginTop: "0px",
-            backgroundColor: '#000',
+            background: "url('/site-background.jpeg')",
+            backgroundSize: "cover", // Ensure the image covers the entire container
+            backgroundRepeat: "no-repeat", // Prevent the image from repeating
+            backgroundPosition: "center", // Center the image within the container
             border: "none",
           }}
         >
-          
           <UpcomingShows />
           <Media />
           <Streaming />

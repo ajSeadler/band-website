@@ -1,21 +1,35 @@
-// Streaming.jsx
 import React from "react";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+`;
+
+const StyledIframe = styled.iframe`
+  border-radius: 0px;
+  margin-bottom: 10px;
+  margin: auto;
+  width: 90%;
+  height: 450px;
+  border: 0;
+  allowfullscreen: "";
+  allow: autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture;
+  loading: lazy;
+
+  @media (min-width: 768px) {
+    width: 60%;
+  }
+`;
 
 const Streaming = () => {
   return (
-    <div style={{ display: "flex", flexDirection: "column", marginTop: "20px" }}>
-      {/* Spotify iframe */}
-      <iframe
-        style={{ borderRadius: "0px", marginBottom: "10px", margin: "5px" }}
+    <Container>
+      <StyledIframe
         src="https://open.spotify.com/embed/artist/3SwSE7OtWzLOrc32Eq54gO?utm_source=generator&theme=0"
-        width="98%"
-        height="450"
-        frameBorder="0"
-        allowFullScreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-    </div>
+      />
+    </Container>
   );
 };
 

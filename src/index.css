@@ -11,7 +11,10 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: #000;
+  background: url('/site-background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h6 {
@@ -23,8 +26,7 @@ p {
 }
 
 .home-pg {
-  background: #000;
-  margin-top: -4%;
+  background: transparent;
 }
 
 .shows-pg {
@@ -149,14 +151,19 @@ h1 {
 
 .bio {
   background-size: cover;
-  background-position: top;
+  margin: 0px;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
 .bio {
   background-image: url("/pics/compressed/fullband.JPG");
+  background-position: top; /* Positions the image at the top */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Adjust the height of the container as needed */
 }
+
 
 .bio-desktop {
   background-image: url("/pics/desk-home.JPG");
@@ -232,6 +239,10 @@ h1 {
 
   .logodes {
     display: none;
+  }
+
+  .bio {
+    margin-top: 15%;
   }
 
   .hero-section button {

@@ -22,7 +22,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 const ShowsPaper = styled(Paper)(({ theme }) => ({
   padding: "10px",
-  background: "#000",
+  background: "transparent",
   marginBottom: "2%",
   width: '100%',
 }));

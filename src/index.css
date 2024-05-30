@@ -84,21 +84,6 @@ h1 {
   margin-top: 5%;
 }
 
-.hero-section {
-  background-size: cover;
-  background-position: center top;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  font-size: 0.8rem;
-  padding: 20px;
-  background-image: url(/public/pics/bluePink.jpg);
-}
-
 .home-shows {
   color: #fff;
   font-family: 'Gasoek One';

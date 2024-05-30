@@ -125,6 +125,7 @@ const Shows = () => {
   };
 
   return (
+    <>
     <div className="shows-pg">
       {/* Conditionally render the loader if loading is true */}
       {loading && (
@@ -216,6 +217,7 @@ const Shows = () => {
         </FullImageDialogContent>
       </FullImageDialog>
     </div>
+    </>
   );
 };
 

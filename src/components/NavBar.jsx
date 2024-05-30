@@ -1,21 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
   Typography,
   Button,
   Box,
+  useScrollTrigger,
   Slide,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa';
-import useScrollDirection from "./useScrollDirection";  // Import the custom hook
 
 const NavBar = () => {
-  const scrollDirection = useScrollDirection();
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    const top = window.scrollY;
+    setShowNavbar(top === 0);
+  };
+
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+  });
 
   return (
-    <Slide appear={false} direction="down" in={scrollDirection === "up"}>
+    <Slide appear={false} direction="down" in={showNavbar || !trigger}>
       <AppBar
         position="fixed"
         sx={{

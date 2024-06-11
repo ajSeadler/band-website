@@ -69,6 +69,21 @@ h1 {
   
 }
 
+.brick-breaker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+canvas {
+  border: 1px solid #d3d3d3;
+  background-color: #ffffff;
+}
+
+
+
 .custom-font {
   margin-bottom: 10px;
   display: block;

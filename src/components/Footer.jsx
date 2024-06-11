@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa';
 import styled from 'styled-components';
+// import OKCTime from './OKCTime'
 
 const StyledFooter = styled.div`
   padding: 20px;
@@ -75,10 +76,12 @@ const Footer = () => {
                 <FaFacebook className="icon" size={30} />
               </a>
             </SocialIcons>
+            
           </Col>
           <Col xs="12" md="6" className="text-center mb-2 mt-3 mb-md-0">
             <CopyrightText>© 2024 Disco Stranger Music. All rights reserved.</CopyrightText>
             <p style={{fontSize:'.8rem'}}>Built and designed by AJ Seadler</p>
+            {/* <div><OKCTime /></div> */}
           </Col>
         </FooterContent>
       </Container>

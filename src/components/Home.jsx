@@ -1,12 +1,9 @@
-// HomePage.jsx
 import React, { useState, useEffect } from "react";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { motion } from "framer-motion";
 import { Paper } from "@mui/material";
-import ContactUs from "./ContactUs";
 import Streaming from "./Streaming";
 import Media from "./Media";
-import AboutUs from "./AboutUs";
 import UpcomingShows from "./UpcomingShows";
 import SpinnerBanner from "./SpinnerBanner";
 
@@ -47,8 +44,6 @@ const Home = () => {
           <UpcomingShows />
           <Media />
           <Streaming />
-          {/* <AboutUs />
-          <ContactUs /> */}
         </Paper>
       </div>
       {showScrollDownText && (

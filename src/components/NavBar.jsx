@@ -100,7 +100,9 @@ const NavBar = () => {
             >
               Contact
             </Button>
+            
           </Box>
+          
         </Toolbar>
       </AppBar>
     </Slide>

@@ -1,0 +1,74 @@
+.booking-container {
+  background: #f7f7f7;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.booking-container .form-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background: #8f2121;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-container .form-container h4 {
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.booking-container .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-container .form-container .MuiTextField-root {
+  margin-bottom: 20px;
+}
+
+.booking-container .form-container .MuiFormControl-root {
+  margin-bottom: 20px;
+}
+
+.booking-container .form-container .MuiButton-root {
+  margin-top: 2rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.booking-container .form-container .MuiButton-root:hover {
+  background-color: #555;
+}
+
+.booking-container .form-container .date-picker {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-container .form-container .MuiTypography-body2 {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.booking-container .form-container .MuiTypography-body1 {
+  color: green;
+  margin-top: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .booking-container .form-container {
+    padding: 20px 10px;
+  }
+}

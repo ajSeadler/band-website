@@ -22,7 +22,7 @@ const SocialIcons = styled.div`
 const Contact = () => {
   return (
     <div style={{ height: '100vh' }}> {/* Ensuring full viewport height */}
-      <Container maxWidth="md" style={{ width: '100%', marginTop: '25vh' }}> {/* Added top margin */}
+      <Container maxWidth="md" style={{ width: '100%', marginTop: '25vh', }}> {/* Added top margin */}
         <Paper elevation={3} style={{ padding: '30px', borderRadius: '0px' }}>
           <Typography variant="h5" gutterBottom style={{ fontFamily: 'Gasoek One' }}>
             CONTACT
@@ -31,13 +31,6 @@ const Contact = () => {
           <Typography variant="body1" paragraph style={{ fontFamily: 'Bebas Neue' }}>
             Want to book us? Reach out and send an email below!
           </Typography>
-          <Typography variant="h6" style={{ display: 'flex', alignItems: 'center', marginBottom: '2%' }}>
-            <img src="pics/email.png" alt="Email" style={{ height: '30px', marginRight: '10px', borderRadius: '5px' }} />
-            <Link href="mailto:discostrangermusic@gmail.com" style={{ fontSize: '1rem' }}>
-              discostrangermusic@gmail.com
-            </Link>
-          </Typography>
-
           {/* Social Links */}
           <SocialIcons>
             <a href="https://open.spotify.com/artist/3SwSE7OtWzLOrc32Eq54gO" target="_blank" rel="noopener noreferrer">
@@ -56,8 +49,18 @@ const Contact = () => {
               <FaFacebook size={30} />
             </a>
           </SocialIcons>
+          <ContactUs />
+          <Typography variant="h6" style={{ display: 'flex', alignItems: 'center', marginBottom: '2%' }}>
+            <img src="pics/email.png" alt="Email" style={{ height: '30px', marginRight: '10px', borderRadius: '5px' }} />
+            <Link href="mailto:discostrangermusic@gmail.com" style={{ fontSize: '1rem' }}>
+              discostrangermusic@gmail.com
+            </Link>
+          </Typography>
+
+          
+          
         </Paper>
-        <ContactUs />
+        
       </Container> 
     </div>
   );

@@ -82,6 +82,10 @@ canvas {
   background-color: #ffffff;
 }
 
+.booking-container {
+  background-color: #fff;
+  padding: 0px;
+}
 
 
 .custom-font {

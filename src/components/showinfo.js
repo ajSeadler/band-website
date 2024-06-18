@@ -1,5 +1,13 @@
 const shows = [
-  
+  {
+    title: "51st Street Speakeasy",
+    date: 'July 5th, 2024',
+    time: '9:00PM - 12:00AM',
+    price: '$5',
+    image: "",
+    location: "
+1114 NW 51st St, Oklahoma City, OK 73118"
+  },
 ];
 
 const pastShows = [

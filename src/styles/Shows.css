@@ -1,6 +1,4 @@
 .shows-pg {
-  padding: 50px;
-  margin-top: 10vh;
   background: transparent !important;
   color: #fff;
 }
@@ -33,10 +31,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.show-card:hover {
+/* .show-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .show-card-content {
   padding: 16px;

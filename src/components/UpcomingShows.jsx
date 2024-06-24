@@ -74,7 +74,7 @@ const UpcomingShows = () => {
 
   return (
     <>
-      <div className="shows-pg">
+      <div className="upcoming-shows">
         {loading && (
           <div className="loader-overlay">
             <ClipLoader color="#36D7B7" loading={loading} size={50} />
@@ -83,9 +83,6 @@ const UpcomingShows = () => {
 
         {!loading && (
           <Paper elevation={0} className="shows-pg">
-            <div className="custom-font-shows">
-              <h1>UPCOMING SHOWS</h1>
-            </div>
             <Slider {...sliderSettings} className="shows-slider">
               {shows.map((show, index) => (
                 <div key={index} className="show-slide">

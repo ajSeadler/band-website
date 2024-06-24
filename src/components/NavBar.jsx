@@ -144,7 +144,7 @@ const NavBar = () => {
                 fontFamily: "Oswald",
                 fontSize: "1.2rem",
                 margin: "0px",
-                color: isActive("/") ? "#f00" : "#fff", // Active color change
+                color: isActive("/") ? "#fff" : "#fff", // Active color change
               }}
               component={Link}
               to="/"
@@ -156,7 +156,7 @@ const NavBar = () => {
                 fontFamily: "Oswald",
                 fontSize: "1.2rem",
                 margin: "0px",
-                color: isActive("/shows") ? "#f00" : "#fff", // Active color change
+                color: isActive("/shows") ? "#DC965A" : "#fff", // Active color change
               }}
               color="inherit"
               component={Link}
@@ -169,7 +169,7 @@ const NavBar = () => {
                 fontFamily: "Oswald",
                 fontSize: "1.2rem",
                 margin: "0px",
-                color: isActive("/contact") ? "#f00" : "#fff", // Active color change
+                color: isActive("/contact") ? "#DC965A" : "#fff", // Active color change
               }}
               color="inherit"
               component={Link}

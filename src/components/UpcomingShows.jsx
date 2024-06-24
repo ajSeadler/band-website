@@ -123,7 +123,7 @@ const UpcomingShows = () => {
         {!loading && (
           <ShowsPaper elevation={0}>
             <div className="home-shows">
-              <h4
+              {/* <h4
                 style={{
                   color: "#fff",
                   textAlign: "center",
@@ -132,7 +132,7 @@ const UpcomingShows = () => {
                 }}
               >
                 UPCOMING SHOWS
-              </h4>
+              </h4> */}
             </div>
             <ShowsContainer container spacing={2}>
               {shows.length === 0 ? (
@@ -174,6 +174,8 @@ const UpcomingShows = () => {
                           style={{
                             fontSize: "1rem",
                             textDecoration: "underline",
+                            fontFamily: "Oswald",
+                            textTransform: "uppercase",
                           }}
                         >
                           {show.title}

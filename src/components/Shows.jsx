@@ -71,9 +71,9 @@ const Shows = () => {
 
         {!loading && (
           <Paper elevation={0} className="shows-pg">
-            <div className="custom-font-shows">
+            {/* <div className="custom-font-shows">
               <h1>UPCOMING SHOWS</h1>
-            </div>
+            </div> */}
             <Grid
               container
               spacing={4}

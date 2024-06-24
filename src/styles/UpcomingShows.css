@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-.show-card {
+.show-card-up {
   display: flex;
   flex-direction: column;
   background-color: #181818 !important;
@@ -22,7 +22,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-  border-radius: 8px;
+  border-radius: 20px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -41,8 +41,8 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .show-title {

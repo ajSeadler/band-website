@@ -87,7 +87,7 @@ const UpcomingShows = () => {
               {shows.map((show, index) => (
                 <div key={index} className="show-slide">
                   <Card
-                    className="show-card"
+                    className="show-card-up"
                     onClick={() => handleCardClick(show)}
                   >
                     <img

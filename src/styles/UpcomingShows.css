@@ -15,6 +15,7 @@
 
 .show-card-up {
   display: flex;
+  margin: 5px;
   flex-direction: column;
   background-color: #181818 !important;
   color: white !important;

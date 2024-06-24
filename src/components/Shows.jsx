@@ -145,7 +145,7 @@ const Shows = () => {
             </Slider>
 
             <div className="custom-font-shows">
-              <h1>PAST SHOWS</h1>
+              <h1 style={{ marginTop: "10%" }}>PAST SHOWS</h1>
             </div>
 
             <Slider {...sliderSettings} className="shows-carousel">

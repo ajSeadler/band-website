@@ -1,6 +1,8 @@
 .shows-pg {
   background: transparent !important;
   color: #fff;
+  padding: 20px;
+  margin-top: 10vh;
 }
 
 @media (max-width: 768px) {
@@ -47,6 +49,19 @@
   object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+
+.slick-dots {
+  margin: 10px 0; /* Add margin around the dots */
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Adjust individual dot spacing */
+}
+
+.slick-dots li button {
+  font-size: 12px;
+  color: #7cbd93 !important;
 }
 
 .full-image-dialog .MuiDialog-paper {

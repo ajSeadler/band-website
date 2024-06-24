@@ -24,27 +24,28 @@ const ShowsPaper = styled(Paper)(({ theme }) => ({
   padding: "10px",
   background: "transparent",
   marginBottom: "2%",
-  width: '100%',
+  width: "100%",
 }));
 
 const ShowsContainer = styled(Grid)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  margin: '0 auto',
+  display: "flex",
+  flexDirection: "column",
+  margin: "0 auto",
   padding: 0,
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '100%',
-  [theme.breakpoints.down('sm')]: {
-    padding: '0 10px',
+  justifyContent: "center",
+  alignItems: "center",
+  width: "100%",
+  [theme.breakpoints.down("sm")]: {
+    padding: "0 10px",
   },
 }));
 
 const ShowCard = styled(Card)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
-  backgroundColor: "#89909F",
-  color: "white",
+  backgroundColor: "white", // White background color
+  color: "black", // Black text color
+  borderRadius: "8px",
   overflow: "hidden",
   cursor: "pointer",
   transition: "transform 0.2s ease-in-out",
@@ -64,8 +65,7 @@ const ShowCardContent = styled(CardContent)(({ theme }) => ({
 const ShowImage = styled("img")(({ theme }) => ({
   width: "100%",
   height: "auto",
-  borderRadius: "0px",
-  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+  borderRadius: "8px 8px 0 0", // Rounded corners at the top
   objectFit: "cover",
 }));
 
@@ -123,21 +123,39 @@ const UpcomingShows = () => {
         {!loading && (
           <ShowsPaper elevation={0}>
             <div className="home-shows">
-              <h4 style={{ color: 'white', textAlign: 'center', margin: '20px 0', fontSize:'2.5rem' }}>
+              <h4
+                style={{
+                  color: "#fff",
+                  textAlign: "center",
+                  margin: "20px 0",
+                  fontSize: "2.5rem",
+                }}
+              >
                 UPCOMING SHOWS
               </h4>
             </div>
             <ShowsContainer container spacing={2}>
               {shows.length === 0 ? (
-                <div style={{ textAlign: 'center', color: 'white', margin: '20px' }}>
-                  <Typography variant="body1" style={{ display: 'inline' }}>
+                <div
+                  style={{
+                    textAlign: "center",
+                    color: "black",
+                    margin: "20px",
+                  }}
+                >
+                  <Typography variant="body1" style={{ display: "inline" }}>
                     No upcoming shows
                   </Typography>
                   <Link
                     component={RouterLink}
                     to="/contact"
                     variant="body1"
-                    style={{ marginLeft: '5px', color: 'white', textDecoration: 'underline', fontFamily:'Oswald' }}
+                    style={{
+                      marginLeft: "5px",
+                      color: "black",
+                      textDecoration: "underline",
+                      fontFamily: "Oswald",
+                    }}
                   >
                     Want to change that?
                   </Link>
@@ -146,20 +164,47 @@ const UpcomingShows = () => {
                 shows.map((show, index) => (
                   <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
                     <ShowCard onClick={() => handleCardClick(show)}>
-                      <ShowImage src={show.image} alt={`Band Picture ${index}`} />
+                      <ShowImage
+                        src={show.image}
+                        alt={`Band Picture ${index}`}
+                      />
                       <ShowCardContent>
-                        <Typography variant="h6" style={{ fontSize: '1rem', textDecoration: 'underline' }}>{show.title}</Typography>
-                        <Typography variant="body2">
-                          <EventIcon fontSize="small" /> {show.date}
+                        <Typography
+                          variant="h6"
+                          style={{
+                            fontSize: "1rem",
+                            textDecoration: "underline",
+                          }}
+                        >
+                          {show.title}
                         </Typography>
                         <Typography variant="body2">
-                          <ScheduleIcon fontSize="small" /> {show.time}
+                          <EventIcon
+                            fontSize="small"
+                            sx={{ color: "#1db954", marginRight: 1 }}
+                          />{" "}
+                          {show.date}
                         </Typography>
                         <Typography variant="body2">
-                          <MonetizationOnIcon fontSize="small" /> {show.price}
+                          <ScheduleIcon
+                            fontSize="small"
+                            sx={{ color: "#36D7B7", marginRight: 1 }}
+                          />{" "}
+                          {show.time}
                         </Typography>
                         <Typography variant="body2">
-                          <LocationOnIcon fontSize="small" /> {show.location}
+                          <MonetizationOnIcon
+                            fontSize="small"
+                            sx={{ color: "#ffac33", marginRight: 1 }}
+                          />{" "}
+                          {show.price}
+                        </Typography>
+                        <Typography variant="body2">
+                          <LocationOnIcon
+                            fontSize="small"
+                            sx={{ color: "#ff5722", marginRight: 1 }}
+                          />{" "}
+                          {show.location}
                         </Typography>
                       </ShowCardContent>
                     </ShowCard>

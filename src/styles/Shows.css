@@ -1,0 +1,115 @@
+.shows-pg {
+  padding: 50px;
+  margin-top: 10vh;
+  background: transparent !important;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .shows-pg {
+    padding: 20px;
+    margin-top: 15vh;
+  }
+}
+
+.shows-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.show-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+  color: white;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 8px;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+}
+
+.show-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.full-image-dialog .MuiDialog-paper {
+  background-color: #121212;
+}
+
+.full-image-dialog-content {
+  padding: 0;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: white;
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.custom-font-shows h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .custom-font-shows h1 {
+    font-size: 2rem;
+  }
+}
+
+.past-shows-anchor {
+  margin-top: 20px;
+}
+
+.pagination-buttons {
+  margin-top: 20px;
+}
+
+.pagination-buttons button {
+  color: #ffffff;
+  background-color: #4759a1;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-buttons button:hover {
+  background-color: #7cbd93;
+  color: white;
+}

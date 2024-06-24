@@ -158,7 +158,7 @@ const Shows = () => {
                     <img
                       src={show.image}
                       alt={`Band Picture ${index}`}
-                      className="show-image"
+                      className="show-image-past"
                     />
                     <CardContent className="show-card-content">
                       <h6

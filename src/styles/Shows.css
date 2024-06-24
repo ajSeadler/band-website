@@ -111,6 +111,9 @@
   .show-image {
     height: auto;
   }
+  .show-image-past {
+    height: 300px;
+  }
 }
 
 .past-shows-anchor {

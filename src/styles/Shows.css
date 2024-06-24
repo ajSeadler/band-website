@@ -21,8 +21,8 @@
 .show-card {
   display: flex;
   flex-direction: column;
-  background-color: #181818;
-  color: white;
+  background-color: #181818 !important;
+  color: white !important;
   height: 100%;
   overflow: hidden;
   cursor: pointer;

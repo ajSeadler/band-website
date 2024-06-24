@@ -1,15 +1,6 @@
-.shows-pg {
-  padding: 50px;
-  margin-top: 10vh;
+.upcoming-shows {
   background: transparent !important;
   color: #fff;
-}
-
-@media (max-width: 768px) {
-  .shows-pg {
-    padding: 20px;
-    margin-top: 10vh;
-  }
 }
 
 .shows-slider {
@@ -18,7 +9,7 @@
 }
 
 .show-slide {
-  padding: 0 10px;
+  height: auto;
   box-sizing: border-box;
 }
 
@@ -35,9 +26,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.show-card:hover {
+/* .show-card:hover {
   transform: scale(1.05);
-}
+} */
 
 .show-card-content {
   flex-grow: 1;

@@ -34,6 +34,29 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.show-card-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.show-image-modal {
+  width: 100%;
+  max-width: 300px; /* Adjust max-width as per your design */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .show-image-modal {
+    max-width: 100%;
+  }
+}
+
 /* .show-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);

@@ -1,0 +1,91 @@
+.shows-pg {
+  padding: 50px;
+  margin-top: 10vh;
+  background: transparent !important;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .shows-pg {
+    padding: 20px;
+    margin-top: 10vh;
+  }
+}
+
+.shows-slider {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.show-slide {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.show-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #181818 !important;
+  color: white !important;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+}
+
+.show-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.show-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.show-title {
+  font-size: 1rem;
+  text-decoration: underline;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.full-image-dialog .MuiDialog-paper {
+  overflow: hidden;
+}
+
+.full-image-dialog-content {
+  padding: 0;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: white;
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  z-index: 1000;
+}

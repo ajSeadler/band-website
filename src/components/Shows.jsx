@@ -17,20 +17,20 @@ import EventIcon from "@mui/icons-material/Event";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../styles/Shows.css";
-
-const showsPerPage = 4;
 
 const Shows = () => {
   const [open, setOpen] = useState(false);
   const [selectedShow, setSelectedShow] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    });
+    }); // Set a delay for the loading spinner
 
     return () => clearTimeout(timer);
   }, []);
@@ -44,20 +44,37 @@ const Shows = () => {
     setOpen(false);
   };
 
-  const indexOfLastShow = currentPage * showsPerPage;
-  const indexOfFirstShow = indexOfLastShow - showsPerPage;
-  const currentShows = pastShows.slice(indexOfFirstShow, indexOfLastShow);
-
-  const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber);
-    const pastShowsAnchor = document.getElementById("pastShows");
-    if (pastShowsAnchor) {
-      const topOffset = pastShowsAnchor.offsetTop;
-      window.scrollTo({
-        top: topOffset,
-        behavior: "smooth",
-      });
-    }
+  const sliderSettings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -74,14 +91,9 @@ const Shows = () => {
             {/* <div className="custom-font-shows">
               <h1>UPCOMING SHOWS</h1>
             </div> */}
-            <Grid
-              container
-              spacing={4}
-              className="shows-container"
-              style={{ marginBottom: "3%" }}
-            >
+            <Slider {...sliderSettings} className="shows-carousel">
               {shows.map((show, index) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                <div key={index}>
                   <Card
                     className="show-card"
                     onClick={() => handleCardClick(show)}
@@ -128,19 +140,17 @@ const Shows = () => {
                       </Typography>
                     </CardContent>
                   </Card>
-                </Grid>
+                </div>
               ))}
-            </Grid>
+            </Slider>
 
             <div className="custom-font-shows">
               <h1>PAST SHOWS</h1>
             </div>
 
-            <div id="pastShows" className="past-shows-anchor" />
-
-            <Grid container spacing={4} className="shows-container">
-              {currentShows.map((show, index) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+            <Slider {...sliderSettings} className="shows-carousel">
+              {pastShows.map((show, index) => (
+                <div key={index}>
                   <Card
                     className="show-card"
                     onClick={() => handleCardClick(show)}
@@ -187,40 +197,9 @@ const Shows = () => {
                       </Typography>
                     </CardContent>
                   </Card>
-                </Grid>
+                </div>
               ))}
-            </Grid>
-
-            <Grid
-              container
-              justifyContent="center"
-              className="pagination-buttons"
-            >
-              {[
-                ...Array(Math.ceil(pastShows.length / showsPerPage)).keys(),
-              ].map((pageNumber) => (
-                <Button
-                  key={pageNumber + 1}
-                  onClick={() => paginate(pageNumber + 1)}
-                  sx={{
-                    color: "#1db954",
-                    backgroundColor: "#121212",
-                    border: "none",
-                    padding: "10px 20px",
-                    margin: "0 5px",
-                    borderRadius: "50px",
-                    cursor: "pointer",
-                    transition: "background-color 0.3s ease",
-                    "&:hover": {
-                      backgroundColor: "#1db954",
-                      color: "white",
-                    },
-                  }}
-                >
-                  {pageNumber + 1}
-                </Button>
-              ))}
-            </Grid>
+            </Slider>
           </Paper>
         )}
 

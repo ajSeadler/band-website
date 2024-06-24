@@ -43,7 +43,7 @@ const ShowsContainer = styled(Grid)(({ theme }) => ({
 const ShowCard = styled(Card)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
-  backgroundColor: "black", // White background color
+  backgroundColor: "#181818", // White background color
   color: "white", // Black text color
   borderRadius: "8px",
   overflow: "hidden",

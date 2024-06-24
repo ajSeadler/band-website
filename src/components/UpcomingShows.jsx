@@ -95,7 +95,7 @@ const UpcomingShows = () => {
     // Simulating loading time
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // Adjust the time as needed
+    }); // Adjust the time as needed
 
     // Cleanup function to clear the timeout
     return () => clearTimeout(timer);

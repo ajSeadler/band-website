@@ -15,6 +15,14 @@ const shows = [
     image: "/pics/greenblue.jpg",
     location: "2408 N Robinson Ave, Oklahoma City, OK 73103",
   },
+  {
+    title: "Stonecloud Stillwater Patio & Taproom",
+    date: "September 14th, 2024",
+    time: "7:00PM - 9:00PM",
+    price: "FREE",
+    image: "/pics/stonecloud.jpeg",
+    location: "917 S Husband St, Stillwater, OK 74074",
+  },
 ];
 
 const pastShows = [

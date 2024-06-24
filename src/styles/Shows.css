@@ -8,6 +8,7 @@
 @media (max-width: 768px) {
   .shows-pg {
     padding: 20px;
+    margin: auto;
     margin-top: 10vh;
   }
 }

@@ -1,0 +1,40 @@
+.contact-paper {
+  display: flex !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #e8ff94;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #333;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin: 5% !important;
+  color: #fff;
+}
+
+.contact-info .email-icon {
+  margin-right: 3px;
+}
+
+.contact-email {
+  font-size: 1rem !important;
+  color: #fff !important;
+}

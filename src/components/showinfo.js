@@ -13,7 +13,7 @@ const shows = [
     date: "July 19th, 2024",
     time: "9:00PM - 12:00AM",
     price: "$10",
-    image: "/pics/greenblue.jpg",
+    image: "/pics/compressed/bluePink.jpg",
     location: "2408 N Robinson Ave, Oklahoma City, OK 73103",
     description: "Featuring: Foxburrows abd World Peace Death Ray",
   },

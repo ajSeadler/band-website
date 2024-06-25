@@ -56,8 +56,7 @@ const UpcomingShows = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000); // Simulating loading for 1 second
+      setLoading }, );
     return () => clearTimeout(timer);
   }, []);
 

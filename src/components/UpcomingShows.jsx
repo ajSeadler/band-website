@@ -56,7 +56,8 @@ const UpcomingShows = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading }, );
+      setLoading(false);
+    });
     return () => clearTimeout(timer);
   }, []);
 

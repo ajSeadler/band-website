@@ -3,6 +3,11 @@
   color: #fff;
 }
 
+.show-image-up {
+  height: 200px !important;
+  object-fit: cover;
+}
+
 .show-slide {
   height: auto;
   box-sizing: border-box;
@@ -81,5 +86,10 @@
 @media (max-width: 768px) {
   .show-image {
     height: 300px;
+  }
+
+  .show-image-up {
+    height: auto !important;
+    object-fit: cover;
   }
 }

@@ -24,7 +24,7 @@
   background-color: #1e1e1e !important;
   color: white !important;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 20px !important;
   margin-bottom: 15% !important;
   overflow: hidden;
   cursor: pointer;

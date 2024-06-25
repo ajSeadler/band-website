@@ -30,7 +30,7 @@ const Shows = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }); // Simulating loading for 1 second
+    });
 
     return () => clearTimeout(timer);
   }, []);
@@ -45,7 +45,7 @@ const Shows = () => {
   };
 
   const sliderSettings = {
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 4,
@@ -57,7 +57,7 @@ const Shows = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -87,9 +87,6 @@ const Shows = () => {
 
       {!loading && (
         <Paper elevation={0} className="shows-pg">
-          <div className="custom-font-shows">
-            <h1>UPCOMING SHOWS</h1>
-          </div>
           <Slider {...sliderSettings} className="shows-carousel">
             {shows.map((show, index) => (
               <div key={index}>
@@ -154,7 +151,7 @@ const Shows = () => {
                   <img
                     src={show.image}
                     alt={`Band Picture ${index}`}
-                    className="show-image"
+                    className="show-image-past"
                   />
                   <CardContent className="show-card-content">
                     <h6
@@ -241,6 +238,11 @@ const Shows = () => {
                   />{" "}
                   {selectedShow.location}
                 </Typography>
+                {selectedShow.description && (
+                  <Typography variant="body2" className="show-description">
+                    {selectedShow.description}
+                  </Typography>
+                )}
               </CardContent>
             </Card>
           )}

@@ -7,7 +7,6 @@ import {
   Dialog,
   DialogContent,
   IconButton,
-  Link,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { ClipLoader } from "react-spinners";
@@ -17,7 +16,6 @@ import EventIcon from "@mui/icons-material/Event";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { Link as RouterLink } from "react-router-dom";
 import "../styles/UpcomingShows.css"; // Import the CSS file
 
 const sliderSettings = {
@@ -59,7 +57,7 @@ const UpcomingShows = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    });
+    }, 1000); // Simulating loading for 1 second
     return () => clearTimeout(timer);
   }, []);
 
@@ -93,7 +91,7 @@ const UpcomingShows = () => {
                     <img
                       src={show.image}
                       alt={`Band Picture ${index}`}
-                      className="show-image"
+                      className="show-image-up"
                     />
                     <CardContent className="show-card-content">
                       <h6 className="show-title">{show.title}</h6>
@@ -136,11 +134,47 @@ const UpcomingShows = () => {
             >
               <CloseIcon />
             </IconButton>
-            <img
-              src={selectedShow?.image}
-              alt={`Band Picture`}
-              className="show-image"
-            />
+            {selectedShow && (
+              <Card className="show-card-modal">
+                <img
+                  src={selectedShow.image}
+                  alt={`Band Picture`}
+                  className="show-image-modal"
+                />
+                <CardContent className="show-card-content">
+                  <h6 className="show-title">{selectedShow.title}</h6>
+                  <Typography>
+                    <EventIcon sx={{ color: "#ffbd01", marginRight: 1 }} />{" "}
+                    {selectedShow.date}
+                  </Typography>
+                  <Typography>
+                    <ScheduleIcon sx={{ color: "#4a90e2", marginRight: 1 }} />{" "}
+                    {selectedShow.time}
+                  </Typography>
+                  {selectedShow.price && (
+                    <Typography>
+                      <MonetizationOnIcon
+                        sx={{ color: "#1ed760", marginRight: 1 }}
+                      />{" "}
+                      {selectedShow.price}
+                    </Typography>
+                  )}
+                  <Typography variant="body2">
+                    <LocationOnIcon sx={{ color: "#d34836", marginRight: 1 }} />{" "}
+                    {selectedShow.location}
+                  </Typography>
+                  {selectedShow.description && (
+                    <Typography
+                      variant="body2"
+                      style={{ marginTop: 10 }}
+                      className="show-description"
+                    >
+                      {selectedShow.description}
+                    </Typography>
+                  )}
+                </CardContent>
+              </Card>
+            )}
           </DialogContent>
         </Dialog>
       </div>

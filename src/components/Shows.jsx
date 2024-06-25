@@ -217,6 +217,25 @@ const Shows = () => {
                 <h6 style={{ fontSize: "1.3rem", textDecoration: "underline" }}>
                   {selectedShow.title}
                 </h6>
+                {selectedShow.description && (
+                  <Typography
+                    variant="body2"
+                    style={{ marginBottom: "10px", fontSize: "1rem" }}
+                    className="show-description"
+                  >
+                    {" "}
+                    <span
+                      style={{
+                        color: "salmon",
+                        textDecoration: "underline",
+                        margin: "0px",
+                      }}
+                    >
+                      FEATURING:{" "}
+                    </span>
+                    {selectedShow.description}
+                  </Typography>
+                )}
                 <Typography>
                   <EventIcon sx={{ color: "#ffbd01", marginRight: 1 }} />{" "}
                   {selectedShow.date}
@@ -239,16 +258,6 @@ const Shows = () => {
                   />{" "}
                   {selectedShow.location}
                 </Typography>
-                {selectedShow.description && (
-                  <Typography variant="body2" className="show-description">
-                    <span
-                      style={{ color: "salmon", textDecoration: "underline" }}
-                    >
-                      FEATURING:{" "}
-                    </span>
-                    {selectedShow.description}
-                  </Typography>
-                )}
               </CardContent>
             </Card>
           )}

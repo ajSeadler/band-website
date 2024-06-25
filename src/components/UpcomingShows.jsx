@@ -97,6 +97,22 @@ const UpcomingShows = () => {
                     />
                     <CardContent className="show-card-content">
                       <h6 className="show-title">{show.title}</h6>
+                      {/* <Typography
+                        variant="body2"
+                        style={{ marginTop: 10 }}
+                        className="show-description"
+                      >
+                        {" "}
+                        <span
+                          style={{
+                            color: "salmon",
+                            textDecoration: "underline",
+                          }}
+                        >
+                          FEATURING:{" "}
+                        </span>
+                        {show.description}
+                      </Typography> */}
                       <Typography>
                         <EventIcon sx={{ color: "#ffbd01", marginRight: 1 }} />{" "}
                         {show.date}
@@ -145,6 +161,25 @@ const UpcomingShows = () => {
                 />
                 <CardContent className="show-card-content">
                   <h6 className="show-title">{selectedShow.title}</h6>
+                  {selectedShow.description && (
+                    <Typography
+                      variant="body2"
+                      style={{ marginBottom: "10px", fontSize: "1rem" }}
+                      className="show-description"
+                    >
+                      {" "}
+                      <span
+                        style={{
+                          color: "salmon",
+                          textDecoration: "underline",
+                          margin: "0px",
+                        }}
+                      >
+                        FEATURING:{" "}
+                      </span>
+                      {selectedShow.description}
+                    </Typography>
+                  )}
                   <Typography>
                     <EventIcon sx={{ color: "#ffbd01", marginRight: 1 }} />{" "}
                     {selectedShow.date}
@@ -165,21 +200,6 @@ const UpcomingShows = () => {
                     <LocationOnIcon sx={{ color: "#d34836", marginRight: 1 }} />{" "}
                     {selectedShow.location}
                   </Typography>
-                  {selectedShow.description && (
-                    <Typography
-                      variant="body2"
-                      style={{ marginTop: 10 }}
-                      className="show-description"
-                    >
-                      {" "}
-                      <span
-                        style={{ color: "salmon", textDecoration: "underline" }}
-                      >
-                        FEATURING:{" "}
-                      </span>
-                      {selectedShow.description}
-                    </Typography>
-                  )}
                 </CardContent>
               </Card>
             )}

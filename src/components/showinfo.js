@@ -25,7 +25,7 @@ const shows = [
     image: "/pics/stonecloud.jpeg",
     location: "917 S Husband St, Stillwater, OK 74074",
     description:
-      "an evening with Disco Stranger on the patio at Stonecloud Brewing CO. in Stillwater, OK",
+      "An evening with Disco Stranger on the patio at Stonecloud Brewing CO. in Stillwater, OK",
   },
 ];
 

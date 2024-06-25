@@ -171,6 +171,12 @@ const UpcomingShows = () => {
                       style={{ marginTop: 10 }}
                       className="show-description"
                     >
+                      {" "}
+                      <span
+                        style={{ color: "salmon", textDecoration: "underline" }}
+                      >
+                        FEATURING:{" "}
+                      </span>
                       {selectedShow.description}
                     </Typography>
                   )}

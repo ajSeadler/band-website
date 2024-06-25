@@ -241,6 +241,11 @@ const Shows = () => {
                 </Typography>
                 {selectedShow.description && (
                   <Typography variant="body2" className="show-description">
+                    <span
+                      style={{ color: "salmon", textDecoration: "underline" }}
+                    >
+                      FEATURING:{" "}
+                    </span>
                     {selectedShow.description}
                   </Typography>
                 )}

@@ -6,7 +6,7 @@ const shows = [
     price: "$5",
     image: "/pics/speakeasy7:5.jpg",
     location: "1114 NW 51st St, Oklahoma City, OK 73118",
-    description: "Featuring: AJ Harvey and The Completely Unavailables",
+    description: "AJ Harvey and The Completely Unavailables",
   },
   {
     title: "Blue Note Lounge",
@@ -15,7 +15,7 @@ const shows = [
     price: "$10",
     image: "/pics/compressed/bluePink.jpg",
     location: "2408 N Robinson Ave, Oklahoma City, OK 73103",
-    description: "Featuring: Foxburrows abd World Peace Death Ray",
+    description: "Foxburrows and World Peace Death Ray",
   },
   {
     title: "Stonecloud Stillwater Patio & Taproom",
@@ -25,7 +25,7 @@ const shows = [
     image: "/pics/stonecloud.jpeg",
     location: "917 S Husband St, Stillwater, OK 74074",
     description:
-      "Enjoy an evening with Disco Stranger on the patio at Stonecloud Brewing CO. in Stillwater, OK",
+      "an evening with Disco Stranger on the patio at Stonecloud Brewing CO. in Stillwater, OK",
   },
 ];
 

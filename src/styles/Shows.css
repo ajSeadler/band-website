@@ -38,11 +38,11 @@
 .show-card-modal {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   max-width: 100%;
   height: auto;
   margin: auto;
-  padding: 15px;
+  padding: 10px;
   background-color: transparent !important;
   color: #fff !important;
 }

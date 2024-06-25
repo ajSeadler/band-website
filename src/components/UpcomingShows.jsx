@@ -21,6 +21,7 @@ import "../styles/UpcomingShows.css"; // Import the CSS file
 const sliderSettings = {
   dots: true,
   infinite: false,
+  arrows: false,
   speed: 500,
   slidesToShow: 4,
   slidesToScroll: 4,
@@ -81,6 +82,7 @@ const UpcomingShows = () => {
 
         {!loading && (
           <Paper elevation={0} className="shows-pg">
+            <div className="swipe-indicator"></div>
             <Slider {...sliderSettings} className="shows-slider">
               {shows.map((show, index) => (
                 <div key={index} className="show-slide">

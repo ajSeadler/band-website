@@ -8,6 +8,7 @@ import {
   DialogContent,
   IconButton,
   Button,
+  Skeleton,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { ClipLoader } from "react-spinners";
@@ -51,6 +52,56 @@ const sliderSettings = {
   ],
 };
 
+const renderSkeletons = (count) => {
+  const skeletons = [];
+  for (let i = 0; i < count; i++) {
+    skeletons.push(
+      <div key={i} className="show-slide">
+        <Card className="show-card-up">
+          <Skeleton
+            variant="rectangular"
+            width="100%"
+            height={150}
+            className="show-image-up"
+          />
+          <CardContent className="show-card-content">
+            <Skeleton
+              width="60%"
+              height={30}
+              style={{ backgroundColor: "#EF5D60" }}
+            />
+            <Skeleton
+              width="40%"
+              height={20}
+              style={{ backgroundColor: "#EF5D60" }}
+            />
+            <Skeleton
+              width="40%"
+              height={20}
+              style={{ backgroundColor: "#EF5D60" }}
+            />
+            <Skeleton
+              width="40%"
+              height={20}
+              style={{ backgroundColor: "#EF5D60" }}
+            />
+            <div className="location-and-button">
+              <Skeleton variant="text" width="70%" />
+              <Skeleton
+                variant="rectangular"
+                width="30%"
+                height={30}
+                className="oval-button"
+              />
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+  return skeletons;
+};
+
 const UpcomingShows = () => {
   const [open, setOpen] = useState(false);
   const [selectedShow, setSelectedShow] = useState(null);
@@ -59,7 +110,7 @@ const UpcomingShows = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    });
+    }, 500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -76,11 +127,13 @@ const UpcomingShows = () => {
     <>
       <div className="upcoming-shows">
         {loading && (
-          <div className="loader-overlay">
-            <ClipLoader color="#36D7B7" loading={loading} size={50} />
-          </div>
+          <Paper elevation={0} className="upcoming-shows">
+            <div className="swipe-indicator"></div>
+            <Slider {...sliderSettings} className="shows-slider">
+              {renderSkeletons(3)}
+            </Slider>
+          </Paper>
         )}
-
         {!loading && (
           <Paper elevation={0} className="upcoming-shows">
             <div className="swipe-indicator"></div>

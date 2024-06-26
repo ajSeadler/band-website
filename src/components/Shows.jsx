@@ -126,7 +126,6 @@ const Shows = () => {
                         <LocationOnIcon
                           sx={{
                             color: "#d34836",
-                            fontSize: "small",
                             marginRight: 1,
                           }}
                         />{" "}
@@ -187,7 +186,6 @@ const Shows = () => {
                         <LocationOnIcon
                           sx={{
                             color: "#d34836",
-                            fontSize: "small",
                             marginRight: 1,
                           }}
                         />{" "}

@@ -37,6 +37,7 @@
 .show-card-modal {
   display: flex;
   flex-direction: column;
+  border-radius: 0px !important;
   align-items: left;
   max-width: 100%;
   height: auto;
@@ -49,6 +50,7 @@
 .show-image-modal {
   width: 100vw; /* Increase the width */
   max-width: 100%;
+  border-radius: 20px;
   height: auto;
 }
 

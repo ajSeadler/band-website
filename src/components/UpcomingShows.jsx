@@ -81,7 +81,7 @@ const UpcomingShows = () => {
         )}
 
         {!loading && (
-          <Paper elevation={0} className="shows-pg">
+          <Paper elevation={0} className="upcoming-shows">
             <div className="swipe-indicator"></div>
             <Slider {...sliderSettings} className="shows-slider">
               {shows.map((show, index) => (

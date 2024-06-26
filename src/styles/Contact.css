@@ -1,5 +1,6 @@
 .contact-paper {
   display: flex !important;
+  text-align: center;
   background-color: transparent !important;
   color: #fff !important;
   flex-direction: column !important;
@@ -24,14 +25,13 @@
 }
 
 .contact-info {
-  display: flex;
-  align-items: center;
-  margin: 5% !important;
+  text-align: center !important;
+  margin: auto !important;
   color: #fff;
 }
 
 .contact-info .email-icon {
-  margin-right: 3px;
+  margin: 2px !important;
 }
 
 .contact-email {

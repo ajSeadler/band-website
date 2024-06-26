@@ -1,19 +1,21 @@
+/* Streaming.css */
+
 .streaming-container {
   display: flex;
-  width: 90vw;
+  width: 90vw !important; /* Default width for mobile */
   margin: auto;
+  margin-top: 20px;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  padding: 20px;
+  padding: 10px !important;
   background-color: #121212;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .styled-iframe {
-  width: 95%;
-  height: 450px;
+  width: 100%;
+  height: 500px;
   border: none;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -30,10 +32,7 @@
 
 @media (min-width: 768px) {
   .streaming-container {
-    width: 72vw;
-  }
-
-  .styled-iframe {
-    width: 100%;
+    width: 74vw !important; /* Width for desktop */
+    padding: 20px !important;
   }
 }

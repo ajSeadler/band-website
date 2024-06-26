@@ -7,11 +7,10 @@
 
 @media (max-width: 768px) {
   .shows-pg {
-    padding: 0px;
+    padding: 20px;
     margin: auto;
-    width: 90vw;
     margin: auto;
-    margin-top: 22vh;
+    margin-top: 10vh;
   }
 }
 

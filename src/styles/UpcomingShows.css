@@ -1,3 +1,5 @@
+/* UpcomingShows.css */
+
 .upcoming-shows {
   background: transparent !important;
   width: 100%;
@@ -14,7 +16,7 @@
   box-sizing: border-box;
 }
 
- .show-card-up {
+.show-card-up {
   display: flex;
   margin: 5px;
   flex-direction: column;
@@ -23,17 +25,10 @@
   height: auto;
   overflow: hidden;
   margin-bottom: 5%;
-  cursor: pointer;
   transition: transform 0.2s ease-in-out;
   border-radius: 20px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} 
-
-
-
-/* .show-card:hover {
-  transform: scale(1.05);
-} */
+}
 
 .show-card-content {
   flex-grow: 1;
@@ -55,6 +50,33 @@
   text-decoration: underline;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+}
+
+.location-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.oval-button {
+  background-color: transparent !important;
+  color: salmon !important;
+  border: 2px solid salmon !important;
+  border-radius: 20px !important;
+  padding: 5px 10% !important;
+  margin: 3px !important;
+  font-size: 0.7rem !important;
+  font-weight: bold !important;
+  white-space: nowrap !important;
+  text-transform: none;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+}
+
+.oval-button:hover {
+  background-color: salmon !important;
+  color: #fff !important;
 }
 
 .full-image-dialog .MuiDialog-paper {
@@ -94,5 +116,12 @@
   .show-image-up {
     height: auto !important;
     object-fit: cover;
+  }
+
+  .oval-button {
+    padding: 5px 10% !important;
+    margin: 1px !important;
+    font-size: 0.7rem !important;
+    white-space: nowrap !important;
   }
 }

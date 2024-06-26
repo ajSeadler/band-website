@@ -7,6 +7,7 @@ import {
   Dialog,
   DialogContent,
   IconButton,
+  Button,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { ClipLoader } from "react-spinners";
@@ -86,10 +87,7 @@ const UpcomingShows = () => {
             <Slider {...sliderSettings} className="shows-slider">
               {shows.map((show, index) => (
                 <div key={index} className="show-slide">
-                  <Card
-                    className="show-card-up"
-                    onClick={() => handleCardClick(show)}
-                  >
+                  <Card className="show-card-up">
                     <img
                       src={show.image}
                       alt={`Band Picture ${index}`}
@@ -97,22 +95,6 @@ const UpcomingShows = () => {
                     />
                     <CardContent className="show-card-content">
                       <h6 className="show-title">{show.title}</h6>
-                      {/* <Typography
-                        variant="body2"
-                        style={{ marginTop: 10 }}
-                        className="show-description"
-                      >
-                        {" "}
-                        <span
-                          style={{
-                            color: "salmon",
-                            textDecoration: "underline",
-                          }}
-                        >
-                          FEATURING:{" "}
-                        </span>
-                        {show.description}
-                      </Typography> */}
                       <Typography>
                         <EventIcon sx={{ color: "#ffbd01", marginRight: 1 }} />{" "}
                         {show.date}
@@ -129,12 +111,20 @@ const UpcomingShows = () => {
                         />{" "}
                         {show.price}
                       </Typography>
-                      <Typography variant="body2">
-                        <LocationOnIcon
-                          sx={{ color: "#d34836", marginRight: 1 }}
-                        />{" "}
-                        {show.location}
-                      </Typography>
+                      <div className="location-and-button">
+                        <Typography variant="body2">
+                          <LocationOnIcon
+                            sx={{ color: "#d34836", marginRight: 1 }}
+                          />{" "}
+                          {show.location}
+                        </Typography>
+                        <Button
+                          className="oval-button"
+                          onClick={() => handleCardClick(show)}
+                        >
+                          See Details
+                        </Button>
+                      </div>
                     </CardContent>
                   </Card>
                 </div>

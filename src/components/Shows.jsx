@@ -7,6 +7,7 @@ import {
   Dialog,
   DialogContent,
   IconButton,
+  Button,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { ClipLoader } from "react-spinners";
@@ -91,10 +92,7 @@ const Shows = () => {
           <Slider {...sliderSettings} className="shows-carousel">
             {shows.map((show, index) => (
               <div key={index}>
-                <Card
-                  className="show-card"
-                  onClick={() => handleCardClick(show)}
-                >
+                <Card className="show-card">
                   <img
                     src={show.image}
                     alt={`Band Picture ${index}`}
@@ -123,16 +121,24 @@ const Shows = () => {
                       />{" "}
                       {show.price}
                     </Typography>
-                    <Typography variant="body2">
-                      <LocationOnIcon
-                        sx={{
-                          color: "#d34836",
-                          fontSize: "small",
-                          marginRight: 1,
-                        }}
-                      />{" "}
-                      {show.location}
-                    </Typography>
+                    <div className="location-and-button">
+                      <Typography variant="body2">
+                        <LocationOnIcon
+                          sx={{
+                            color: "#d34836",
+                            fontSize: "small",
+                            marginRight: 1,
+                          }}
+                        />{" "}
+                        {show.location}
+                      </Typography>
+                      <Button
+                        className="oval-button"
+                        onClick={() => handleCardClick(show)}
+                      >
+                        See Details
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -145,10 +151,7 @@ const Shows = () => {
           <Slider {...sliderSettings} className="shows-carousel">
             {pastShows.map((show, index) => (
               <div key={index}>
-                <Card
-                  className="show-card"
-                  onClick={() => handleCardClick(show)}
-                >
+                <Card className="show-card">
                   <img
                     src={show.image}
                     alt={`Band Picture ${index}`}
@@ -179,16 +182,24 @@ const Shows = () => {
                         {show.price}
                       </Typography>
                     )}
-                    <Typography variant="body2">
-                      <LocationOnIcon
-                        sx={{
-                          color: "#d34836",
-                          fontSize: "small",
-                          marginRight: 1,
-                        }}
-                      />{" "}
-                      {show.location}
-                    </Typography>
+                    <div className="location-and-button">
+                      <Typography variant="body2">
+                        <LocationOnIcon
+                          sx={{
+                            color: "#d34836",
+                            fontSize: "small",
+                            marginRight: 1,
+                          }}
+                        />{" "}
+                        {show.location}
+                      </Typography>
+                      <Button
+                        className="oval-button"
+                        onClick={() => handleCardClick(show)}
+                      >
+                        See Details
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               </div>

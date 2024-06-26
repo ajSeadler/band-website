@@ -1,12 +1,10 @@
-// Video.js
-
 import React from "react";
 import { Card, CardContent, Typography } from "@mui/material";
 import "../styles/Media.css";
 
 const Video = ({ src, title }) => {
   return (
-    <Card className="video-card">
+    <Card className="video-card" style={{ width: "32%" }}>
       <div className="video-wrapper">
         <iframe
           title={title}

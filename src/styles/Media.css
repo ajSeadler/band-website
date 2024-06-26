@@ -2,10 +2,10 @@
 
 .video-container {
   display: flex;
-  width: 73vw;
+  width: 75vw;
   margin: auto;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 0px;
   padding: 0px;
   background-color: transparent;
   justify-content: center;
@@ -43,11 +43,11 @@
   .video-container {
     flex-direction: column;
     margin: auto;
-    width: 90vw;
+    width: 90vw !important;
   }
 
   .video-card {
-    width: 100%; /* 1 video per row on mobile */
+    width: 100% !important; /* 1 video per row on mobile */
     margin-top: 10% !important;
   }
 

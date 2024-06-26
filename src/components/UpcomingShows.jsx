@@ -13,7 +13,7 @@ import "../styles/UpcomingShows.css";
 
 const sliderSettings = {
   dots: true,
-  infinite: true,
+  infinite: false,
   arrows: false,
   speed: 500,
   slidesToShow: 4,

@@ -52,12 +52,12 @@
   text-transform: uppercase;
 }
 
-.location-and-button {
+/* .location-and-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-}
+} */
 
 .oval-button {
   background-color: transparent !important;
@@ -65,13 +65,14 @@
   border: 2px solid salmon !important;
   border-radius: 20px !important;
   padding: 5px 10% !important;
-  margin: 3px !important;
+  margin: auto !important;
   font-size: 0.7rem !important;
   font-weight: bold !important;
   white-space: nowrap !important;
   text-transform: none;
   cursor: pointer;
   transition: all 0.3s ease !important;
+  float: right !important;
 }
 
 .oval-button:hover {

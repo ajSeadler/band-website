@@ -120,9 +120,14 @@
   }
 
   .oval-button {
-    padding: 5px 8% !important;
+    padding: 8px 10% !important;
     margin: 1px !important;
     font-size: 0.7rem !important;
     white-space: nowrap !important;
+  }
+
+  .location-text {
+    width: 45%;
+    margin: 2px;
   }
 }

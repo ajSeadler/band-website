@@ -52,20 +52,20 @@
   text-transform: uppercase;
 }
 
-/* .location-and-button {
+.location-and-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-} */
+}
 
 .oval-button {
   background-color: transparent !important;
   color: salmon !important;
   border: 2px solid salmon !important;
   border-radius: 20px !important;
-  padding: 5px 10% !important;
-  margin: auto !important;
+  padding: 5px 5% !important;
+  margin: 5px !important;
   font-size: 0.7rem !important;
   font-weight: bold !important;
   white-space: nowrap !important;

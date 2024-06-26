@@ -114,7 +114,7 @@ const UpcomingShows = () => {
                       <div className="location-and-button">
                         <Typography variant="body2">
                           <LocationOnIcon
-                            sx={{ color: "#d34836", marginRight: 1 }}
+                            sx={{ color: "#d34836", marginRight: 0 }}
                           />{" "}
                           {show.location}
                         </Typography>

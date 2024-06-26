@@ -1,5 +1,6 @@
 const shows = [
   {
+    id: 1,
     title: "51st Street Speakeasy",
     date: "July 5th, 2024",
     time: "9:00PM - 12:00AM",
@@ -7,8 +8,10 @@ const shows = [
     image: "/pics/speakeasy7:5.jpg",
     location: "1114 NW 51st St, Oklahoma City, OK 73118",
     description: "AJ Harvey and The Completely Unavailables",
+    bio: "Join Disco Stranger with local artists AJ Harvery and The Completely Unavailables for a night of music, drinks, and heavy jams.",
   },
   {
+    id: 2,
     title: "Blue Note Lounge",
     date: "July 19th, 2024",
     time: "9:00PM - 12:00AM",
@@ -16,17 +19,20 @@ const shows = [
     image: "/pics/compressed/bluePink.jpg",
     location: "2408 N Robinson Ave, Oklahoma City, OK 73103",
     description: "Foxburrows and World Peace Death Ray",
+    bio: "Join Disco Stranger with local artists Foxburrows and World Peace Death Ray for a night of electric jams and sleep deprivation",
   },
   {
+    id: 3,
     title: "Stonecloud Stillwater Patio & Taproom",
     date: "September 14th, 2024",
     time: "7:00PM - 9:00PM",
     price: "FREE",
     image: "/pics/stonecloud.jpeg",
     location: "917 S Husband St, Stillwater, OK 74074",
-    description:
-      "An evening with Disco Stranger on the patio at Stonecloud Brewing CO. in Stillwater, OK",
+    description: "An evening with Disco Stranger",
+    bio: "Join us at Stonecloud Brewing CO. in Stillwater, OK for an evening of good jams and good brews",
   },
+  // Add more shows as needed
 ];
 
 const pastShows = [

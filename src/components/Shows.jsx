@@ -4,13 +4,9 @@ import {
   Typography,
   Card,
   CardContent,
-  Dialog,
-  DialogContent,
-  IconButton,
   Button,
   Skeleton,
 } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
 import EventIcon from "@mui/icons-material/Event";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
@@ -18,15 +14,14 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from "react-router-dom";
 import "../styles/Shows.css";
 
-// Importing shows and pastShows from showinfo.js
 import { shows, pastShows } from "./showinfo";
 
 const Shows = () => {
-  const [open, setOpen] = useState(false);
-  const [selectedShow, setSelectedShow] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -36,18 +31,13 @@ const Shows = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleCardClick = (show) => {
-    setSelectedShow(show);
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
+  const handleCardClick = (showId) => {
+    navigate(`/showdetails/${showId}`);
   };
 
   const sliderSettings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     arrows: false,
     speed: 500,
     slidesToShow: 4,
@@ -167,7 +157,7 @@ const Shows = () => {
                         </Typography>
                         <Button
                           className="oval-button"
-                          onClick={() => handleCardClick(show)}
+                          onClick={() => handleCardClick(show.id)}
                         >
                           See Details
                         </Button>
@@ -265,12 +255,12 @@ const Shows = () => {
                           />{" "}
                           {show.location}
                         </Typography>
-                        <Button
+                        {/* <Button
                           className="oval-button"
-                          onClick={() => handleCardClick(show)}
+                          onClick={() => handleCardClick(show.id)}
                         >
                           See Details
-                        </Button>
+                        </Button> */}
                       </div>
                     </CardContent>
                   </Card>
@@ -278,73 +268,6 @@ const Shows = () => {
               ))}
         </Slider>
       </Paper>
-
-      <Dialog open={open} onClose={handleClose} className="full-image-dialog">
-        <DialogContent className="full-image-dialog-content">
-          <IconButton
-            aria-label="close"
-            onClick={handleClose}
-            className="close-button"
-          >
-            <CloseIcon />
-          </IconButton>
-          {selectedShow && (
-            <Card className="show-card-modal">
-              <img
-                src={selectedShow.image}
-                alt={`Band Picture`}
-                className="show-image-modal"
-              />
-              <CardContent className="show-card-content">
-                <h6 style={{ fontSize: "1.3rem", textDecoration: "underline" }}>
-                  {selectedShow.title}
-                </h6>
-                {selectedShow.description && (
-                  <Typography
-                    variant="body2"
-                    style={{ marginBottom: "10px", fontSize: "1rem" }}
-                    className="show-description"
-                  >
-                    {" "}
-                    <span
-                      style={{
-                        color: "salmon",
-                        textDecoration: "underline",
-                        margin: "0px",
-                      }}
-                    >
-                      FEATURING:{" "}
-                    </span>
-                    {selectedShow.description}
-                  </Typography>
-                )}
-                <Typography>
-                  <EventIcon sx={{ color: "#ffbd01", marginRight: 1 }} />{" "}
-                  {selectedShow.date}
-                </Typography>
-                <Typography>
-                  <ScheduleIcon sx={{ color: "#4a90e2", marginRight: 1 }} />{" "}
-                  {selectedShow.time}
-                </Typography>
-                {selectedShow.price && (
-                  <Typography>
-                    <MonetizationOnIcon
-                      sx={{ color: "#1ed760", marginRight: 1 }}
-                    />{" "}
-                    {selectedShow.price}
-                  </Typography>
-                )}
-                <Typography variant="body2">
-                  <LocationOnIcon
-                    sx={{ color: "#d34836", fontSize: "small", marginRight: 1 }}
-                  />{" "}
-                  {selectedShow.location}
-                </Typography>
-              </CardContent>
-            </Card>
-          )}
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };

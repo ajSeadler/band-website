@@ -7,6 +7,7 @@ import Shows from "./components/Shows";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import ShowDetailsPage from "./components/ShowDetailsPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/shows" element={<Shows />} />
+          <Route path="/showdetails/:id" element={<ShowDetailsPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blob" element={<Blob />} />
         </Routes>

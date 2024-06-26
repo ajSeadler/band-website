@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-/* .show-card-up {
+ .show-card-up {
   display: flex;
   margin: 5px;
   flex-direction: column;
@@ -27,52 +27,9 @@
   transition: transform 0.2s ease-in-out;
   border-radius: 20px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
+} 
 
-.show-card-up {
-  background-color: #1e1e1e !important;
-  color: white !important;
-  margin: 5px;
-  border-radius: 20px !important;
-  margin-bottom: 5% !important;
-  overflow: hidden;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: initialPosition 0.4s forwards;
-}
 
-.show-card-up:hover {
-  animation: hoverEffect 0.4s forwards;
-}
-
-@keyframes initialPosition {
-  from {
-    transform: scale(0.25) translateY(0);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(0.25) translateY(0);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 1;
-  }
-}
-
-@keyframes hoverEffect {
-  from {
-    transform: scale(1) translateY(0);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(1.05) translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    opacity: 0.95;
-  }
-}
 
 /* .show-card:hover {
   transform: scale(1.05);

@@ -112,7 +112,7 @@ const UpcomingShows = () => {
                         {show.price}
                       </Typography>
                       <div className="location-and-button">
-                        <Typography variant="body2">
+                        <Typography variant="body2" style={{ width: "45%" }}>
                           <LocationOnIcon
                             sx={{ color: "#d34836", marginRight: 0 }}
                           />{" "}

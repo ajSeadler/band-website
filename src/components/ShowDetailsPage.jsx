@@ -1,6 +1,5 @@
 import React from "react";
-import { Typography, Card, CardContent, IconButton } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { Typography, Card, CardContent } from "@mui/material";
 import EventIcon from "@mui/icons-material/Event";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
@@ -20,13 +19,6 @@ const ShowDetailsPage = ({ onClose }) => {
 
   return (
     <div className="show-details-container">
-      <IconButton
-        aria-label="close"
-        onClick={onClose}
-        className="show-details-close-button"
-      >
-        <CloseIcon />
-      </IconButton>
       <Card className="show-details-card">
         <CardContent className="show-details-card-content">
           <Typography variant="h4" className="show-details-title">

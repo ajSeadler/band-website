@@ -2,7 +2,6 @@
 
 .upcoming-shows {
   background: transparent !important;
-  width: 100%;
   color: #fff;
 }
 
@@ -56,7 +55,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  gap: 20px;
+  margin-top: 0px;
 }
 
 .oval-button {

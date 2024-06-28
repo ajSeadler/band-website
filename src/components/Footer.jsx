@@ -7,62 +7,15 @@ import {
   FaInstagram,
   FaFacebook,
 } from "react-icons/fa";
-import styled from "styled-components";
-
-const StyledFooter = styled.div`
-  padding: 20px;
-  background-color: #333;
-  color: white;
-`;
-
-const FooterContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: 768px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-`;
-
-const CopyrightText = styled.p`
-  margin-bottom: 10px;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    text-align: center;
-  }
-`;
-
-const SocialIcons = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-
-  @media (min-width: 768px) {
-    justify-content: center;
-  }
-
-  a {
-    color: white;
-    transition: color 0.3s ease-in-out;
-
-    &:hover {
-      color: #1db954;
-    }
-  }
-`;
+import "../styles/Footer.css"; // Import the CSS file
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <div className="styled-footer">
       <Container>
-        <FooterContent>
+        <div className="footer-content">
           <Col xs="12" md="6" className="text-center">
-            <SocialIcons>
+            <div className="social-icons">
               <a
                 href="https://open.spotify.com/artist/3SwSE7OtWzLOrc32Eq54gO"
                 target="_blank"
@@ -98,19 +51,19 @@ const Footer = () => {
               >
                 <FaFacebook className="icon" size={30} />
               </a>
-            </SocialIcons>
+            </div>
           </Col>
           <Col xs="12" md="6" className="text-center mb-2 mt-3 mb-md-0">
-            <CopyrightText>
+            <p className="copyright-text">
               © 2024 Disco Stranger Music. All rights reserved.
-            </CopyrightText>
+            </p>
             <p style={{ fontSize: ".8rem" }}>
               Built and designed by AJ Seadler
             </p>
           </Col>
-        </FooterContent>
+        </div>
       </Container>
-    </StyledFooter>
+    </div>
   );
 };
 

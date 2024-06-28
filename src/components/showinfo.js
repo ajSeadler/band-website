@@ -8,7 +8,7 @@ const shows = [
     image: "/pics/speakeasy7:5.jpg",
     location: "1114 NW 51st St, Oklahoma City, OK 73118",
     description: "AJ Harvey and The Completely Unavailables",
-    bio: "Join Disco Stranger with local artists AJ Harvery and The Completely Unavailables for a night of music, drinks, and heavy jams.",
+    bio: "Join Disco Stranger with local artists AJ Harvery and The Completely Unavailables for a night of great music, drinks, and heavy jams.",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const shows = [
   {
     id: 3,
     title: "Stonecloud Stillwater Patio & Taproom",
-    date: "September 14th, 2024",
+    date: "September 19th, 2024",
     time: "7:00PM - 9:00PM",
     price: "FREE",
     image: "/pics/stonecloud.jpeg",

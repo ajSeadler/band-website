@@ -133,12 +133,18 @@
   float: right;
   border-radius: 20px !important;
   font-size: 0.7rem !important;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease !important;
 }
 
 .see-details-button:hover {
-  background-color: salmon;
-  color: white;
+  background-color: salmon !important;
+  color: white !important;
+}
+
+.title-and-disco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .upcoming-event-title {

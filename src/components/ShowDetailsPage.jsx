@@ -6,6 +6,7 @@ import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useParams, Link } from "react-router-dom";
 import { shows } from "./showinfo";
+import DiscoBall from "./DiscoBall";
 import "../styles/ShowDetailsPage.css";
 
 const ShowDetailsPage = () => {
@@ -23,9 +24,12 @@ const ShowDetailsPage = () => {
         <div className="show-details-info">
           <Card className="show-details-card">
             <CardContent className="show-details-card-content">
-              <Typography variant="h4" className="show-details-title">
-                {show.title}
-              </Typography>
+              <div className="title-and-disco">
+                <Typography variant="h4" className="show-details-title">
+                  {show.title}
+                </Typography>
+                <DiscoBall />
+              </div>
               <Typography variant="body1" className="show-details-description">
                 <span
                   style={{

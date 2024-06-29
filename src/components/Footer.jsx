@@ -16,7 +16,6 @@ const Footer = () => {
       <Container>
         <div className="footer-content">
           <Col xs="12" md="6" className="text-center">
-            <DiscoBall />
             <div className="social-icons">
               <a
                 href="https://open.spotify.com/artist/3SwSE7OtWzLOrc32Eq54gO"

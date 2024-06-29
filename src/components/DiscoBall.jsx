@@ -3,8 +3,8 @@ import "../styles/DiscoBall.css"; // Assuming you create a separate CSS file for
 
 const DiscoBall = () => {
   useEffect(() => {
-    const radius = 20.5; // Reduced to half
-    const squareSize = 2.325; // Reduced to half
+    const radius = 25.5; // Reduced to half
+    const squareSize = 3.325; // Reduced to half
     const prec = 19.55;
     const fuzzy = 0.001;
     const inc = (Math.PI - fuzzy) / prec;

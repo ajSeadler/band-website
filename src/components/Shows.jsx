@@ -74,7 +74,7 @@ const Shows = () => {
       <Paper elevation={0} className="shows-pg">
         <Slider {...sliderSettings} className="shows-carousel">
           {loading
-            ? Array.from({ length: 3 }).map((_, index) => (
+            ? Array.from({ length: 4 }).map((_, index) => (
                 <div key={index}>
                   <Card className="show-card">
                     <Skeleton variant="rectangular" width="100%" height={200} />

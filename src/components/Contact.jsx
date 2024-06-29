@@ -69,8 +69,7 @@ const Contact = () => {
 
           {/* Email Section */}
           <Typography variant="h6" className="contact-info">
-            <FaEnvelope size={25} className="email-icon" />
-            {":"}
+            <FaEnvelope size={25} className="email-icon" />{" "}
             {/* Updated email icon */}
             <Link
               href="mailto:discostrangermusic@gmail.com"

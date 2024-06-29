@@ -8,6 +8,11 @@
   padding: 20px;
 }
 
+.email-icon {
+  color: salmon;
+  margin: auto;
+}
+
 .social-icons {
   display: flex;
   margin: 10px;
@@ -36,5 +41,6 @@
 
 .contact-email {
   font-size: 1rem !important;
+  font-family: "YourCustomFont" !important;
   color: #fff !important;
 }

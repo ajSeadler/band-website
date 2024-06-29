@@ -44,7 +44,7 @@ const NavBar = () => {
         position="fixed"
         sx={{
           background: `transparent`,
-          padding: "10px 0",
+          padding: "0px 0",
           boxShadow: "none",
           zIndex: 999,
         }}
@@ -61,7 +61,7 @@ const NavBar = () => {
           }}
         >
           <Typography
-            variant="h4"
+            variant="h5"
             component="div"
             sx={{
               color: "#fff",
@@ -86,8 +86,8 @@ const NavBar = () => {
             >
               <FaSpotify
                 className="icon"
-                size={30}
-                style={{ margin: "10px", color: "#fff" }}
+                size={25}
+                style={{ margin: "5px", color: "#fff" }}
               />
             </a>
             <a
@@ -97,8 +97,8 @@ const NavBar = () => {
             >
               <FaApple
                 className="icon"
-                size={30}
-                style={{ margin: "10px", color: "#fff" }}
+                size={25}
+                style={{ margin: "5px", color: "#fff" }}
               />
             </a>
             <a
@@ -108,8 +108,8 @@ const NavBar = () => {
             >
               <FaYoutube
                 className="icon"
-                size={30}
-                style={{ margin: "10px", color: "#fff" }}
+                size={25}
+                style={{ margin: "5px", color: "#fff" }}
               />
             </a>
             <a
@@ -119,8 +119,8 @@ const NavBar = () => {
             >
               <FaInstagram
                 className="icon"
-                size={30}
-                style={{ margin: "10px", color: "#fff" }}
+                size={25}
+                style={{ margin: "5px", color: "#fff" }}
               />
             </a>
             <a
@@ -130,8 +130,8 @@ const NavBar = () => {
             >
               <FaFacebook
                 className="icon"
-                size={30}
-                style={{ margin: "10px", color: "#fff" }}
+                size={25}
+                style={{ margin: "5px", color: "#fff" }}
               />
             </a>
           </Box>

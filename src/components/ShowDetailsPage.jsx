@@ -35,7 +35,6 @@ const ShowDetailsPage = () => {
                   style={{
                     color: "salmon",
                     textDecoration: "underline",
-                    margin: "5px",
                   }}
                 >
                   FEATURING:
@@ -92,7 +91,7 @@ const ShowDetailsPage = () => {
       </div>
       <div className="upcoming-events-section">
         <Typography variant="h5" className="upcoming-events-title">
-          Upcoming Events
+          Upcoming Shows
         </Typography>
         <Grid container spacing={3}>
           {upcomingShows.map((upcomingShow) => (

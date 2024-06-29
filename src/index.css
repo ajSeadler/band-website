@@ -10,12 +10,7 @@ body {
   font-family: sans-serif;
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  /* background: url("/site-background.jpeg"); */
   background-color: #121212;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 h6 {
@@ -59,7 +54,8 @@ p {
   font-style: normal;
 }
 
-h1 {
+h1,
+h3 {
   font-family: "YourCustomFont";
 }
 
@@ -84,7 +80,7 @@ canvas {
 .custom-font {
   margin-bottom: 10px;
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   animation: fadeIn 1s ease-out;
   font-family: "Gasoek One", sans-serif;

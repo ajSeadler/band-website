@@ -32,6 +32,18 @@ const shows = [
     description: "An evening with Disco Stranger",
     bio: "Join us at Stonecloud Brewing CO. in Stillwater, OK for an evening of good jams and good brews",
   },
+  {
+    id: 4,
+    title: "Resonant Head",
+    date: "September 13th, 2024",
+    time: "9:00PM - 12:00AM",
+    price: "$10",
+    image: "/pics/IMG_2048.JPG",
+    location: "400 SW 25th St STE A, Oklahoma City, OK 73109",
+    description: "The Nghiems",
+    bio: "Come see Disco Stranger and The Nghiems at Resonant Head on Septermber 13th! Third act TBD.",
+  },
+
   // Add more shows as needed
 ];
 

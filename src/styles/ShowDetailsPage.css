@@ -2,10 +2,10 @@
 
 .show-details-container {
   padding: 20px;
-  width: 90vw;
+  width: 85vw;
   margin: auto;
   background: transparent;
-  margin-top: 25vh !important;
+  margin-top: 20vh !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,15 +13,19 @@
 
 .show-details-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
-  margin: auto;
-  gap: 20px;
+  justify-content: space-between;
+}
+
+.show-details-info,
+.show-details-image-container {
+  flex: 1 !important;
+  margin: 5px;
 }
 
 .show-details-card {
   background-color: #1e1e1e !important;
-  height: 20%;
   color: white !important;
   margin: 5px !important;
   border-radius: 20px !important;
@@ -29,28 +33,23 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
-.show-details-close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  color: white;
-  border-radius: 50%;
-}
-
 .show-details-image {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .show-details-card-content {
-  padding: 16px;
+  padding: 10px !important;
+  margin: auto !important;
   text-align: left;
 }
 
 .show-details-title {
   font-family: "Bebas Neue" !important;
+  text-decoration: underline;
   font-size: 1.2rem;
   color: #fff;
   margin-top: 10px;
@@ -83,14 +82,14 @@
   margin: 15px !important;
   padding: 10px;
   border-radius: 20px;
-  background-color: #ccc;
+  background-color: #cdc;
   color: #121212;
 }
 
 .upcoming-events-section {
-  width: 100%;
-  margin-top: 30px;
-  padding: 20px;
+  width: 95% !important;
+  margin-top: 30px !important;
+  padding: 15px !important;
   background-color: #2e2e2e;
   border-radius: 20px;
 }
@@ -115,8 +114,9 @@
 
 .upcoming-event-image {
   width: 100%;
-  height: 200px;
+  height: 300px; /* Increased height */
   object-fit: cover;
+  object-position: top; /* Shows more of the top part of the image */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -126,9 +126,25 @@
   text-align: left;
 }
 
+.see-details-button {
+  border-color: salmon !important;
+  color: salmon !important;
+  margin-top: 10px !important;
+  float: right;
+  border-radius: 20px !important;
+  font-size: 0.7rem !important;
+  transition: all 0.3s ease;
+}
+
+.see-details-button:hover {
+  background-color: salmon;
+  color: white;
+}
+
 .upcoming-event-title {
   font-family: "Bebas Neue" !important;
   font-size: 1.2rem;
+  text-decoration: underline;
   color: #fff;
   margin-top: 10px;
 }
@@ -145,31 +161,18 @@
   margin-top: 5px;
 }
 
-@media (min-width: 769px) {
-  .show-details-row {
-    flex-direction: row;
-  }
-
-  .show-details-card {
-    width: 48%;
-  }
-
-  .show-details-image {
-    height: auto;
-  }
-
-  .show-details-card-content {
-    flex: 1;
-  }
-}
-
 @media (max-width: 1024px) {
   .show-details-container {
     width: 80vw;
   }
 
-  .show-details-card {
-    width: 100% !important;
+  .show-details-row {
+    flex-direction: column;
+  }
+
+  .show-details-info,
+  .show-details-image-container {
+    width: 100%;
   }
 }
 
@@ -178,8 +181,9 @@
     width: 90vw;
   }
 
-  .show-details-card {
-    width: 100% !important;
+  .show-details-info,
+  .show-details-image-container {
+    width: 100%;
   }
 
   .show-details-image {
@@ -191,7 +195,7 @@
   }
 
   .upcoming-event-image {
-    height: 150px;
+    height: 200px;
   }
 }
 
@@ -202,8 +206,9 @@
     margin-top: 20vh;
   }
 
-  .show-details-card {
-    width: 100% !important;
+  .show-details-info,
+  .show-details-image-container {
+    width: 100%;
   }
 
   .show-details-title {
@@ -211,10 +216,10 @@
   }
 
   .upcoming-events-section {
-    padding: 5px;
+    padding: 10px !important;
   }
 
   .upcoming-event-image {
-    height: 100px;
+    height: 150px;
   }
 }

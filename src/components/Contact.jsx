@@ -34,7 +34,7 @@ const Contact = () => {
             Want to book us? Reach out and send an email below!
           </Typography>
           {/* Social Links */}
-          <div className="social-icons">
+          {/* <div className="social-icons">
             <a
               href="https://open.spotify.com/artist/3SwSE7OtWzLOrc32Eq54gO"
               target="_blank"
@@ -70,7 +70,7 @@ const Contact = () => {
             >
               <FaFacebook size={30} />
             </a>
-          </div>
+          </div> */}
 
           {/* Contact Us Component */}
           <ContactUs />

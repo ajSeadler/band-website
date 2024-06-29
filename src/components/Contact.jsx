@@ -1,14 +1,6 @@
 import React from "react";
 import { Container, Paper, Typography, Link } from "@mui/material";
-import {
-  FaSpotify,
-  FaApple,
-  FaYoutube,
-  FaInstagram,
-  FaFacebook,
-  FaEnvelope,
-} from "react-icons/fa"; // Added FaEnvelope for email icon
-import styled from "styled-components";
+import { FaEnvelope } from "react-icons/fa"; // Added FaEnvelope for email icon
 import ContactUs from "./ContactUs";
 import "../styles/Contact.css"; // Import the CSS file
 

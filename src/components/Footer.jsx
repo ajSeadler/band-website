@@ -7,7 +7,8 @@ import {
   FaInstagram,
   FaFacebook,
 } from "react-icons/fa";
-import "../styles/Footer.css"; // Import the CSS file
+import DiscoBall from "./DiscoBall";
+import "../styles/Footer.css";
 
 const Footer = () => {
   return (
@@ -15,6 +16,7 @@ const Footer = () => {
       <Container>
         <div className="footer-content">
           <Col xs="12" md="6" className="text-center">
+            <DiscoBall />
             <div className="social-icons">
               <a
                 href="https://open.spotify.com/artist/3SwSE7OtWzLOrc32Eq54gO"

@@ -1,7 +1,7 @@
 /* ShowDetailsPage.css */
 
 .show-details-container {
-  padding: 20px;
+  padding: 0px !important;
   width: 85vw;
   margin: auto;
   background: transparent;
@@ -26,6 +26,7 @@
 
 .show-details-card {
   background-color: #1e1e1e !important;
+  padding: 10px;
   color: white !important;
   margin: 5px !important;
   border-radius: 20px !important;
@@ -37,8 +38,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
 }
 
 .show-details-card-content {
@@ -98,7 +98,6 @@
   font-family: "Bebas Neue" !important;
   font-size: 1.5rem;
   color: #fff;
-  margin-bottom: 20px;
 }
 
 .upcoming-event-card {
@@ -117,8 +116,6 @@
   height: 300px; /* Increased height */
   object-fit: cover;
   object-position: top; /* Shows more of the top part of the image */
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 
 .upcoming-event-content {
@@ -170,7 +167,7 @@
 
 @media (max-width: 1024px) {
   .show-details-container {
-    width: 80vw;
+    width: 92vw !important;
   }
 
   .show-details-row {
@@ -198,7 +195,7 @@
   }
 
   .upcoming-events-section {
-    padding: 10px;
+    padding: 20px !important;
   }
 
   .upcoming-event-image {
@@ -223,7 +220,7 @@
   }
 
   .upcoming-events-section {
-    padding: 10px !important;
+    padding: 12px !important;
   }
 
   .upcoming-event-image {

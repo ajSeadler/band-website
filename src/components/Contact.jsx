@@ -10,21 +10,14 @@ const Contact = () => {
       <Container maxWidth="md" style={{ width: "100%", marginTop: "20vh" }}>
         {/* Added top margin */}
         <Paper elevation={0} className="contact-paper">
-          <Typography
+          {/* <Typography
             variant="h5"
             gutterBottom
             style={{ fontFamily: "Gasoek One", color: "#fff" }}
           >
             CONTACT
-          </Typography>
+          </Typography> */}
 
-          <Typography
-            variant="body1"
-            paragraph
-            style={{ fontFamily: "Bebas Neue", color: "#fff" }}
-          >
-            Want to book us? Reach out and send an email below!
-          </Typography>
           {/* Social Links */}
           {/* <div className="social-icons">
             <a

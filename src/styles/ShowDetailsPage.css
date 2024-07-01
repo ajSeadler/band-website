@@ -13,15 +13,16 @@
 
 .show-details-row {
   display: flex;
+  padding: 0px !important;
   flex-direction: row;
-  width: 100%;
+  width: 85vw !important;
   justify-content: space-between;
 }
 
 .show-details-info,
 .show-details-image-container {
   flex: 1 !important;
-  margin: 5px;
+  margin: 0px;
 }
 
 .show-details-card {
@@ -87,7 +88,7 @@
 }
 
 .upcoming-events-section {
-  width: 95% !important;
+  width: 100% !important;
   margin-top: 30px !important;
   padding: 15px !important;
   background-color: #2e2e2e;
@@ -181,6 +182,14 @@
 }
 
 @media (max-width: 768px) {
+  .upcoming-events-section {
+    width: 97vw !important;
+  }
+
+  .show-details-row {
+    width: 100vw !important;
+  }
+
   .show-details-container {
     width: 90vw;
   }

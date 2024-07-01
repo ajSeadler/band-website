@@ -90,7 +90,7 @@ const ShowDetailsPage = () => {
         </div>
       </div>
       <div className="upcoming-events-section">
-        <Typography variant="h5" className="upcoming-events-title">
+        <Typography variant="h4" className="upcoming-events-title">
           Upcoming Shows
         </Typography>
         <Grid container spacing={3}>

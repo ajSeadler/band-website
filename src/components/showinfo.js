@@ -1,25 +1,25 @@
 const shows = [
   {
     id: 1,
-    title: "51st Street Speakeasy",
-    date: "July 5th, 2024",
-    time: "9:00PM - 12:00AM",
-    price: "$5",
-    image: "/pics/speakeasy7:5.jpg",
-    location: "1114 NW 51st St, Oklahoma City, OK 73118",
-    description: "AJ Harvey and The Completely Unavailables",
-    bio: "Join Disco Stranger with local artists AJ Harvery and The Completely Unavailables for a night of great music, drinks, and heavy jams.",
-  },
-  {
-    id: 2,
     title: "Blue Note Lounge",
     date: "July 19th, 2024",
     time: "9:00PM - 12:00AM",
     price: "$10",
-    image: "/pics/compressed/bluePink.jpg",
+    image: "/pics/show719.PNG",
     location: "2408 N Robinson Ave, Oklahoma City, OK 73103",
     description: "Foxburrows and World Peace Death Ray",
     bio: "Join Disco Stranger with local artists Foxburrows and World Peace Death Ray for a night of electric jams and sleep deprivation",
+  },
+  {
+    id: 2,
+    title: "Resonant Head",
+    date: "September 13th, 2024",
+    time: "9:00PM - 12:00AM",
+    price: "$10",
+    image: "/pics/IMG_2048.JPG",
+    location: "400 SW 25th St STE A, Oklahoma City, OK 73109",
+    description: "The Nghiems",
+    bio: "Come see Disco Stranger and The Nghiems at Resonant Head on Septermber 13th! Third act TBD.",
   },
   {
     id: 3,
@@ -34,20 +34,28 @@ const shows = [
   },
   {
     id: 4,
-    title: "Resonant Head",
-    date: "September 13th, 2024",
-    time: "9:00PM - 12:00AM",
-    price: "$10",
-    image: "/pics/IMG_2048.JPG",
-    location: "400 SW 25th St STE A, Oklahoma City, OK 73109",
-    description: "The Nghiems",
-    bio: "Come see Disco Stranger and The Nghiems at Resonant Head on Septermber 13th! Third act TBD.",
+    title: "White Rabbit",
+    date: "September 21st, 2024",
+    time: "TBD",
+    price: "FREE",
+    image: "/pics/compressed/bluePink.jpg",
+    location: "219 N Klein Ave Oklahoma City, OK 73109",
   },
 
   // Add more shows as needed
 ];
 
 const pastShows = [
+  {
+    title: "51st Street Speakeasy",
+    date: "July 5th, 2024",
+    time: "9:00PM - 12:00AM",
+    price: "$5",
+    image: "/pics/speakeasy7:5.jpg",
+    location: "1114 NW 51st St, Oklahoma City, OK 73118",
+    description: "AJ Harvey and The Completely Unavailables",
+    bio: "Join Disco Stranger with local artists AJ Harvery and The Completely Unavailables for a night of great music, drinks, and heavy jams.",
+  },
   {
     title: "Paseo Arts Festival",
     date: "May 26th, 2024",

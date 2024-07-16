@@ -14,7 +14,7 @@ const SpinnerBanner = () => {
         overflow: "hidden",
       }}
     >
-      <Marquee speed={60}>
+      <Marquee speed={30}>
         <h3 style={{ margin: "0 20px" }}>'DISCO STRANGER' EP OUT NOW!</h3>
         <h3 style={{ margin: "0 20px" }}>'DISCO STRANGER' EP OUT NOW!</h3>
         <h3 style={{ margin: "0 20px" }}>'DISCO STRANGER' EP OUT NOW!</h3>

@@ -10,19 +10,9 @@ const shows = [
     description: "Foxburrows and World Peace Death Ray",
     bio: "Join Disco Stranger with local artists Foxburrows and World Peace Death Ray for a night of electric jams and sleep deprivation",
   },
+
   {
     id: 2,
-    title: "Resonant Head",
-    date: "September 13th, 2024",
-    time: "9:00PM - 12:00AM",
-    price: "$10",
-    image: "/pics/IMG_2048.JPG",
-    location: "400 SW 25th St STE A, Oklahoma City, OK 73109",
-    description: "The Nghiems",
-    bio: "Come see Disco Stranger and The Nghiems at Resonant Head on Septermber 13th! Third act TBD.",
-  },
-  {
-    id: 3,
     title: "Stonecloud Stillwater Patio & Taproom",
     date: "September 19th, 2024",
     time: "7:00PM - 9:00PM",
@@ -33,7 +23,7 @@ const shows = [
     bio: "Join us at Stonecloud Brewing CO. in Stillwater, OK for an evening of good jams and good brews",
   },
   {
-    id: 4,
+    id: 3,
     title: "White Rabbit",
     date: "September 21st, 2024",
     time: "TBD",

@@ -10,7 +10,7 @@ body {
   font-family: sans-serif;
   margin: 0px;
   padding: 0px;
-  background-color: #121212;
+  background-color: #000;
 }
 
 h6 {
@@ -54,9 +54,21 @@ p {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "DeadFont";
+  src: url("/Storybook.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1,
+h2,
 h3 {
-  font-family: "YourCustomFont";
+  font-family: "YourCustomFont" !important;
+}
+
+h5 {
+  font-family: "DeadFont" !important;
 }
 
 .brick-breaker {

@@ -3,6 +3,7 @@
   color: #fff;
   padding: 20px;
   margin-top: 10vh;
+  margin-bottom: 5% !important;
 }
 
 @media (max-width: 768px) {

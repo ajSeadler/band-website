@@ -32,7 +32,8 @@
 
 @media (min-width: 768px) {
   .streaming-container {
-    width: 74vw !important; /* Width for desktop */
+    margin: auto;
+    width: 98% !important; /* Width for desktop */
     padding: 20px !important;
   }
 }

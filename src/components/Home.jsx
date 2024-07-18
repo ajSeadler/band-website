@@ -3,8 +3,7 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { motion } from "framer-motion";
 import { Paper } from "@mui/material";
 import Streaming from "./Streaming";
-import Media from "./Media";
-import UpcomingShows from "./UpcomingShows";
+import MediaAndShowsGrid from "./MediaAndShowsGrid";
 import SpinnerBanner from "./SpinnerBanner";
 
 const Home = () => {
@@ -41,8 +40,7 @@ const Home = () => {
             border: "none",
           }}
         >
-          <UpcomingShows />
-          <Media />
+          <MediaAndShowsGrid />
           <Streaming />
         </Paper>
       </div>

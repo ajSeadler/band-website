@@ -88,8 +88,9 @@
 }
 
 .upcoming-events-section {
-  width: 100% !important;
-  margin-top: 30px !important;
+  width: 99% !important;
+  margin: auto !important;
+  margin-top: 0px !important;
   padding: 15px !important;
   background-color: #2e2e2e;
   border-radius: 20px;
@@ -102,6 +103,8 @@
 }
 
 .upcoming-event-card {
+  height: auto;
+  width: 100% !important;
   background-color: #1e1e1e !important;
   color: white !important;
   border-radius: 20px !important;
@@ -113,7 +116,7 @@
 }
 
 .upcoming-event-image {
-  width: 100%;
+  width: auto !;
   height: 300px; /* Increased height */
   object-fit: cover;
   object-position: top; /* Shows more of the top part of the image */

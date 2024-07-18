@@ -78,6 +78,64 @@ const ShowDetailsPage = () => {
               )}
             </CardContent>
           </Card>
+          <div className="upcoming-events-section">
+            <Typography variant="h4" className="upcoming-events-title">
+              Upcoming Shows
+            </Typography>
+            <Grid container spacing={3}>
+              {upcomingShows.map((upcomingShow) => (
+                <Grid item xs={12} sm={6} md={4} key={upcomingShow.id}>
+                  <Card className="upcoming-event-card">
+                    <img
+                      src={upcomingShow.image}
+                      alt={upcomingShow.title}
+                      className="upcoming-event-image"
+                    />
+                    <CardContent className="upcoming-event-content">
+                      <Typography variant="h6" className="upcoming-event-title">
+                        {upcomingShow.title}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        className="upcoming-event-date"
+                      >
+                        <EventIcon
+                          className="upcoming-event-icon"
+                          sx={{ color: "#ffbd01" }}
+                        />{" "}
+                        {upcomingShow.date}
+                      </Typography>
+                      <Typography>
+                        <ScheduleIcon
+                          className="upcoming-event-icon"
+                          sx={{ color: "#4a90e2" }}
+                        />{" "}
+                        {upcomingShow.time}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        className="upcoming-event-location"
+                      >
+                        <LocationOnIcon
+                          className="upcoming-event-icon"
+                          sx={{ color: "#d34836" }}
+                        />{" "}
+                        {upcomingShow.location}
+                      </Typography>
+                      <Link to={`/showdetails/${upcomingShow.id}`}>
+                        <Button
+                          variant="outlined"
+                          className="see-details-button"
+                        >
+                          See Details
+                        </Button>
+                      </Link>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </div>
         </div>
         <div className="show-details-image-container">
           <Card className="show-details-card">
@@ -88,58 +146,6 @@ const ShowDetailsPage = () => {
             />
           </Card>
         </div>
-      </div>
-      <div className="upcoming-events-section">
-        <Typography variant="h4" className="upcoming-events-title">
-          Upcoming Shows
-        </Typography>
-        <Grid container spacing={3}>
-          {upcomingShows.map((upcomingShow) => (
-            <Grid item xs={12} sm={6} md={4} key={upcomingShow.id}>
-              <Card className="upcoming-event-card">
-                <img
-                  src={upcomingShow.image}
-                  alt={upcomingShow.title}
-                  className="upcoming-event-image"
-                />
-                <CardContent className="upcoming-event-content">
-                  <Typography variant="h6" className="upcoming-event-title">
-                    {upcomingShow.title}
-                  </Typography>
-                  <Typography variant="body2" className="upcoming-event-date">
-                    <EventIcon
-                      className="upcoming-event-icon"
-                      sx={{ color: "#ffbd01" }}
-                    />{" "}
-                    {upcomingShow.date}
-                  </Typography>
-                  <Typography>
-                    <ScheduleIcon
-                      className="upcoming-event-icon"
-                      sx={{ color: "#4a90e2" }}
-                    />{" "}
-                    {upcomingShow.time}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    className="upcoming-event-location"
-                  >
-                    <LocationOnIcon
-                      className="upcoming-event-icon"
-                      sx={{ color: "#d34836" }}
-                    />{" "}
-                    {upcomingShow.location}
-                  </Typography>
-                  <Link to={`/showdetails/${upcomingShow.id}`}>
-                    <Button variant="outlined" className="see-details-button">
-                      See Details
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
       </div>
     </div>
   );

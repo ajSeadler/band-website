@@ -1,18 +1,6 @@
 const shows = [
   {
     id: 1,
-    title: "Blue Note Lounge",
-    date: "July 19th, 2024",
-    time: "9:00PM - 12:00AM",
-    price: "$10",
-    image: "/pics/show719.PNG",
-    location: "2408 N Robinson Ave, Oklahoma City, OK 73103",
-    description: "Foxburrows and World Peace Death Ray",
-    bio: "Join Disco Stranger with local artists Foxburrows and World Peace Death Ray for a night of electric jams and sleep deprivation",
-  },
-
-  {
-    id: 2,
     title: "Stonecloud Stillwater Patio & Taproom",
     date: "September 19th, 2024",
     time: "7:00PM - 9:00PM",
@@ -23,7 +11,7 @@ const shows = [
     bio: "Join us at Stonecloud Brewing CO. in Stillwater, OK for an evening of good jams and good brews",
   },
   {
-    id: 3,
+    id: 2,
     title: "White Rabbit",
     date: "September 21st, 2024",
     time: "TBD",
@@ -36,6 +24,17 @@ const shows = [
 ];
 
 const pastShows = [
+  {
+    title: "Blue Note Lounge",
+    date: "July 19th, 2024",
+    time: "9:00PM - 12:00AM",
+    price: "$10",
+    image: "/pics/show719.PNG",
+    location: "2408 N Robinson Ave, Oklahoma City, OK 73103",
+    description: "Foxburrows and World Peace Death Ray",
+    bio: "Join Disco Stranger with local artists Foxburrows and World Peace Death Ray for a night of electric jams and sleep deprivation",
+  },
+
   {
     title: "51st Street Speakeasy",
     date: "July 5th, 2024",

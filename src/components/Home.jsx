@@ -5,6 +5,7 @@ import { Paper } from "@mui/material";
 import Streaming from "./Streaming";
 import MediaAndShowsGrid from "./MediaAndShowsGrid";
 import SpinnerBanner from "./SpinnerBanner";
+import ImageGrid from "./ImageGrid";
 
 const Home = () => {
   const [showScrollDownText, setShowScrollDownText] = useState(true);
@@ -41,6 +42,7 @@ const Home = () => {
           }}
         >
           <MediaAndShowsGrid />
+          <ImageGrid />
           <Streaming />
         </Paper>
       </div>

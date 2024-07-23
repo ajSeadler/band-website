@@ -18,6 +18,8 @@ const shows = [
     price: "FREE",
     image: "/pics/compressed/bluePink.jpg",
     location: "219 N Klein Ave Oklahoma City, OK 73109",
+    description: "(Second and third acts TBD)",
+    bio: "Follow Disco Stranger to The White Rabbit for who only knows what...",
   },
 
   // Add more shows as needed

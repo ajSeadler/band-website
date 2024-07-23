@@ -74,7 +74,7 @@
   }
 
   .image-grid-card {
-    padding-bottom: 150%; /* Maintain aspect ratio on mobile */
+    padding-bottom: 100%; /* Maintain aspect ratio on mobile */
   }
 
   .image-grid-card img {

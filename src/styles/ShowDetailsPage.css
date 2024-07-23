@@ -1,7 +1,7 @@
 /* ShowDetailsPage.css */
 
 .show-details-container {
-  padding: 0px !important;
+  padding: 10px !important;
   width: 85vw;
   margin: auto;
   background: transparent;
@@ -90,7 +90,7 @@
 .upcoming-events-section {
   width: 99% !important;
   margin: auto !important;
-  margin-top: 0px !important;
+  margin-top: 10px !important;
   padding: 15px !important;
   background-color: #2e2e2e;
   border-radius: 20px;
@@ -116,7 +116,7 @@
 }
 
 .upcoming-event-image {
-  width: auto !;
+  width: 100% !important;
   height: 300px; /* Increased height */
   object-fit: cover;
   object-position: top; /* Shows more of the top part of the image */

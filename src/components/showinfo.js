@@ -1,7 +1,7 @@
 const shows = [
   {
     id: 1,
-    title: "Stonecloud Stillwater Patio & Taproom",
+    title: "Stonecloud Stillwater",
     date: "September 19th, 2024",
     time: "7:00PM - 9:00PM",
     price: "FREE",

@@ -15,10 +15,10 @@ const SpinnerBanner = () => {
       }}
     >
       <Marquee speed={30}>
-        <h3 style={{ margin: "0 20px" }}>'SMELLS LIKE A NEW SINGLE..</h3>
-        <h3 style={{ margin: "0 20px" }}>'SMELLS LIKE A NEW SINGLE..</h3>
-        <h3 style={{ margin: "0 20px" }}>'SMELLS LIKE A NEW SINGLE..</h3>
-        <h3 style={{ margin: "0 20px" }}>'SMELLS LIKE A NEW SINGLE..</h3>
+        <h3 style={{ margin: "0 20px" }}>SMELLS LIKE A NEW SINGLE..</h3>
+        <h3 style={{ margin: "0 20px" }}>SMELLS LIKE A NEW SINGLE..</h3>
+        <h3 style={{ margin: "0 20px" }}>SMELLS LIKE A NEW SINGLE..</h3>
+        <h3 style={{ margin: "0 20px" }}>SMELLS LIKE A NEW SINGLE..</h3>
       </Marquee>
     </Box>
   );

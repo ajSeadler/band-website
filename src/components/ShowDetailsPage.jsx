@@ -1,3 +1,4 @@
+// ShowDetailsPage.jsx
 import React from "react";
 import { Typography, Card, CardContent, Grid, Button } from "@mui/material";
 import EventIcon from "@mui/icons-material/Event";
@@ -7,6 +8,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useParams, Link } from "react-router-dom";
 import { shows } from "./showinfo";
 import DiscoBall from "./DiscoBall";
+import Playlists from "./Playlists"; // Import the Playlists component
 import "../styles/ShowDetailsPage.css";
 
 const ShowDetailsPage = () => {
@@ -145,6 +147,7 @@ const ShowDetailsPage = () => {
               className="show-details-image"
             />
           </Card>
+          <Playlists /> {/* Use the Playlists component here */}
         </div>
       </div>
     </div>

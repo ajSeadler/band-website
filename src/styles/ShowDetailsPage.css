@@ -1,5 +1,3 @@
-/* ShowDetailsPage.css */
-
 .show-details-container {
   padding: 10px !important;
   width: 85vw;
@@ -26,7 +24,7 @@
 }
 
 .show-details-card {
-  background-color: #1e1e1e !important;
+  background-color: #2e2e2e !important;
   padding: 10px;
   color: white !important;
   margin: 5px !important;
@@ -37,7 +35,7 @@
 
 .show-details-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -90,7 +88,7 @@
 .upcoming-events-section {
   width: 99% !important;
   margin: auto !important;
-  margin-top: 10px !important;
+  margin-top: 20px !important;
   padding: 15px !important;
   background-color: #2e2e2e;
   border-radius: 20px;
@@ -103,6 +101,7 @@
 }
 
 .upcoming-event-card {
+  font-family: "Bebas Neue" !important;
   height: auto;
   width: 100% !important;
   background-color: #1e1e1e !important;
@@ -127,21 +126,6 @@
   text-align: left;
 }
 
-.see-details-button {
-  border-color: salmon !important;
-  color: salmon !important;
-  margin-top: 10px !important;
-  float: right;
-  border-radius: 20px !important;
-  font-size: 0.7rem !important;
-  transition: all 0.3s ease !important;
-}
-
-.see-details-button:hover {
-  background-color: salmon !important;
-  color: white !important;
-}
-
 .title-and-disco {
   display: flex;
 
@@ -149,93 +133,95 @@
   justify-content: flex-start;
 }
 
-.upcoming-event-title {
+.see-details-button {
+  border-color: salmon !important;
+  color: salmon !important;
+  margin-top: 10px !important;
+  float: right;
+  border-radius: 20px !important;
+  font-family: "Arial", sans-serif;
+}
+
+.see-details-button:hover {
+  background-color: salmon !important;
+  color: #1e1e1e !important;
+}
+
+.additional-container {
+  margin-top: 2% !important;
+  margin: 5px;
+  padding: 15px;
+  background-color: #2e2e2e;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.additional-title {
   font-family: "Bebas Neue" !important;
-  font-size: 1.2rem;
-  text-decoration: underline;
+  font-size: 2rem;
   color: #fff;
-  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
-.upcoming-event-icon {
-  margin-right: 10px;
-  vertical-align: middle;
+.additional-card {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
-.upcoming-event-date,
-.upcoming-event-location {
+.additional-card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.member-images-container {
   display: flex;
-  align-items: center;
-  margin-top: 5px;
+  justify-content: center;
+  margin-top: 15px;
 }
+
+.member-image-wrapper {
+  text-align: center;
+}
+
+.member-image {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member-name {
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: "Arial", sans-serif;
+}
+
+/* Media Queries */
 
 @media (max-width: 1024px) {
-  .show-details-container {
-    width: 92vw !important;
-  }
-
   .show-details-row {
     flex-direction: column;
   }
-
   .show-details-info,
   .show-details-image-container {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .upcoming-events-section {
-    width: 97vw !important;
-  }
-
-  .show-details-row {
-    width: 100vw !important;
-  }
-
-  .show-details-container {
-    width: 90vw;
-  }
-
-  .show-details-info,
-  .show-details-image-container {
+  .show-details-card {
+    flex-direction: column;
     width: 100%;
-  }
-
-  .show-details-image {
-    height: auto;
-  }
-
-  .upcoming-events-section {
-    padding: 20px !important;
-  }
-
-  .upcoming-event-image {
-    height: 200px;
   }
 }
 
 @media (max-width: 480px) {
-  .show-details-container {
-    width: 100vw;
-    padding: 10px;
-    margin-top: 20vh;
-  }
-
-  .show-details-info,
-  .show-details-image-container {
-    width: 100%;
-  }
-
-  .show-details-title {
-    font-size: 1rem;
-  }
-
-  .upcoming-events-section {
-    padding: 12px !important;
-  }
-
-  .upcoming-event-image {
-    height: 150px;
+  .show-details-card-content {
+    font-size: 0.8rem;
   }
 }

@@ -169,6 +169,19 @@ const NavBar = () => {
                 fontFamily: "Oswald",
                 fontSize: "1.2rem",
                 margin: "0px",
+                color: isActive("/shows") ? "#DC965A" : "#fff", // Active color change
+              }}
+              color="inherit"
+              component={Link}
+              to="/about"
+            >
+              About
+            </Button>
+            <Button
+              style={{
+                fontFamily: "Oswald",
+                fontSize: "1.2rem",
+                margin: "0px",
                 color: isActive("/contact") ? "#DC965A" : "#fff", // Active color change
               }}
               color="inherit"

@@ -26,10 +26,10 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.about-card:hover {
+/* .about-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-}
+} */
 
 .about-subtitle {
   margin-bottom: 10px;
@@ -39,10 +39,33 @@
 }
 
 .about-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #b0b0b0;
+  font-size: 1.1rem !important;
+  line-height: 1.1 !important;
+  color: #fff;
   text-align: justify;
+}
+
+.about-text p {
+  margin: 0 0 15px 0; /* Space between paragraphs */
+}
+
+.about-text strong {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none; /* Emphasize key points */
+}
+
+.next-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 16px;
+}
+
+.next-step-card {
+  background-color: #2b2b2b;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .playlists-section {
@@ -57,8 +80,21 @@
   color: salmon;
 }
 
+.strike-through {
+  text-decoration: line-through;
+  margin-right: 3px;
+  text-decoration-thickness: 3px; /* Adjust the thickness */
+  text-decoration-color: red; /* Optional: Change the color of the line-through */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .next-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Two columns */
+    gap: 16px;
+  }
+
   .about-container {
     margin-top: 25%;
   }

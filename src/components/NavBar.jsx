@@ -169,7 +169,7 @@ const NavBar = () => {
                 fontFamily: "Oswald",
                 fontSize: "1.2rem",
                 margin: "0px",
-                color: isActive("/shows") ? "#DC965A" : "#fff", // Active color change
+                color: isActive("/about") ? "#DC965A" : "#fff", // Active color change
               }}
               color="inherit"
               component={Link}

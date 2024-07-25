@@ -6,46 +6,42 @@ import "../styles/ShowDetailsPage.css"; // Assuming the styles are defined here
 
 const members = [
   {
-    name: "nathaniel",
+    name: "NATHANIEL",
     image: "/pics/compressed/Nat.jpg",
-    bio: "Nathaniel is a passionate musician who loves exploring new sounds. He is always looking for the next big thing in music and enjoys collaborating with other artists.",
-    instrument: "Guitar",
-
+    bio: "Nathaniel is the rhythmic backbone of the band, bringing complex beats and innovative rhythms to the forefront. Known for his improvisational skills, he drives the band’s energetic live performances and is always exploring new percussive textures.",
+    instrument: "Drums",
     upcomingProjects:
-      "Working on a groundbreaking solo project set to release next year, which will redefine their artistic expression.",
+      "Working on a groundbreaking solo project set to release next year, which will redefine his artistic expression.",
     inspirations:
-      "Inspired by a diverse range of musical genres, from jazz to electronica, infusing their work with a unique blend of styles.",
+      "Inspired by a diverse range of musical genres, from jazz to electronica, infusing his work with a unique blend of styles.",
   },
   {
-    name: "drew",
+    name: "DREW",
     image: "/pics/compressed/drewhead.jpg",
-    bio: "Drew is a versatile artist with a knack for creating unique melodies. His creative approach to music has won him accolades and a loyal fanbase.",
-    instrument: "Bass",
-
+    bio: "Drew's haunting vocals and intricate guitar work are at the heart of the band’s sound. His ability to weave melodies into hypnotic jams captivates audiences, and his fearless approach to songwriting challenges the boundaries of psych rock.",
+    instrument: "Guitar and Lead Vocals",
     upcomingProjects:
-      "Developing a new line of bass guitars designed for the modern musician.",
+      "Developing a new line of guitars designed for the modern musician.",
     inspirations:
       "Heavily inspired by funk and soul, which heavily influence his playing style.",
   },
   {
-    name: "aj",
+    name: "AJ",
     image: "/pics/compressed/aj.jpg",
-    bio: "AJ brings energy and rhythm to the band with his percussive skills. He is the heartbeat of the band and his dynamic drumming style keeps the band grooving.",
-    instrument: "Drums",
-
+    bio: "AJ is the band’s sonic explorer, using his lead guitar to push the boundaries of sound. His solos are a journey into the unknown, blending experimental effects with classic rock influences, creating an unforgettable experience.",
+    instrument: "Lead Guitar",
     upcomingProjects:
-      "Releasing an instructional drumming video series aimed at beginners.",
+      "Releasing an instructional guitar video series aimed at beginners.",
     inspirations:
-      "Deeply influenced by the great drummers of rock and roll history.",
+      "Deeply influenced by the great guitarists of rock and roll history.",
   },
   {
-    name: "colton",
+    name: "COLTON",
     image: "/pics/compressed/col.jpg",
-    bio: "Colton is known for his soulful performances and dynamic range. His powerful vocals and emotive performances captivate audiences everywhere.",
-    instrument: "Vocals",
-
+    bio: "Colton lays down the groove with his bass, providing the foundation for the band’s extended jams. His ability to meld genres into fluid, bass-driven soundscapes adds depth to the band’s performances and elevates their collective sound.",
+    instrument: "Bass",
     upcomingProjects:
-      "Recording a solo album that explores new vocal techniques.",
+      "Recording a solo album that explores new bass techniques.",
     inspirations:
       "Inspired by classical opera and modern pop, creating a unique vocal style.",
   },

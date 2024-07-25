@@ -110,7 +110,7 @@ const MemberDetails = () => {
             border: "none",
             borderRadius: "none",
             margin: "auto",
-            padding: "20px",
+            padding: "0px",
             cursor: "pointer",
           }}
         >

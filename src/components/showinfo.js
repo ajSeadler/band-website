@@ -16,13 +16,24 @@ const shows = [
     date: "September 21st, 2024",
     time: "TBD",
     price: "FREE",
-    image: "/pics/compressed/bluePink.jpg",
+    image: "/pics/compressed/greenblue.jpg",
     location: "219 N Klein Ave Oklahoma City, OK 73109",
     description: "(Second and third acts TBD)",
     bio: "Follow Disco Stranger to The White Rabbit for who only knows what...",
   },
 
-  // Add more shows as needed
+  // Add more shows as needed - here is a place holder
+  //   {
+  //   id: "",
+  //   title: "",
+  //   date: "",
+  //   time: "",
+  //   price: "",
+  //   image: "/pics/(pic).jpeg",
+  //   location: "",
+  //   description: "",
+  //   bio: "",
+  // },
 ];
 
 const pastShows = [

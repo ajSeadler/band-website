@@ -13,8 +13,9 @@ body {
   background-color: #000;
 }
 
-h6 {
-  font-family: "Bebas Neue";
+h6,
+h4 {
+  font-family: "Bebas Neue" !important;
 }
 
 p {

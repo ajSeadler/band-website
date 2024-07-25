@@ -52,7 +52,7 @@ const AboutPage = () => {
       </Card>
 
       <Card className="about-card">
-        <CardContent>
+        {/* <CardContent>
           <Typography variant="h4" className="about-subtitle">
             What's Next?
           </Typography>
@@ -99,7 +99,7 @@ const AboutPage = () => {
               </Typography>
             </div>
           </div>
-        </CardContent>
+        </CardContent> */}
       </Card>
     </div>
   );

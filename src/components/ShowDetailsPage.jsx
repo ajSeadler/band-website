@@ -88,11 +88,11 @@ const ShowDetailsPage = () => {
               {upcomingShows.map((upcomingShow) => (
                 <Grid item xs={12} sm={6} md={4} key={upcomingShow.id}>
                   <Card className="upcoming-event-card">
-                    <img
+                    {/* <img
                       src={upcomingShow.image}
                       alt={upcomingShow.title}
                       className="upcoming-event-image"
-                    />
+                    /> */}
                     <CardContent className="upcoming-event-content">
                       <Typography variant="h6" className="upcoming-event-title">
                         {upcomingShow.title}

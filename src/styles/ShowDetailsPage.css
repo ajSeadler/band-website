@@ -305,8 +305,12 @@
 /* Media Queries */
 
 @media (max-width: 1024px) {
+  .additional-container {
+    margin-top: 5% !important;
+    width: 87vw;
+    margin: auto;
+  }
   .member-details-container {
-    margin-top: 15% !important;
     max-width: 100%;
     width: auto;
   }
@@ -331,6 +335,10 @@
 }
 
 @media (max-width: 768px) {
+  .upcoming-events-section {
+    width: 87vw !important;
+  }
+
   .show-details-card {
     flex-direction: column;
     width: 100%;

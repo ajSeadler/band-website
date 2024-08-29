@@ -44,6 +44,7 @@ const NavBar = () => {
         position="fixed"
         sx={{
           background: `transparent`,
+          marginTop:'10px',
           padding: "0px 0",
           boxShadow: "none",
           zIndex: 999,

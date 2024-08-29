@@ -18,7 +18,7 @@ const shows = [
     price: "FREE",
     image: "/pics/compressed/greenblue.jpg",
     location: "219 N Klein Ave Oklahoma City, OK 73109",
-    description: "(Second and third acts TBD)",
+    description: "Band of Brothers",
     bio: "Follow Disco Stranger to The White Rabbit for who only knows what...",
   },
 

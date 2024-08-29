@@ -3,7 +3,7 @@
 .about-container {
   padding: 40px 20px; /* Existing padding for general layout */
   padding-top: 10%; /* Add extra padding to account for the navbar height */
-  max-width: 1200px;
+  width: 50%;
   margin: 0 auto;
   background-color: transparent;
   color: #ffffff;
@@ -40,14 +40,12 @@
 
 .about-text {
   font-size: 1.1rem !important;
-  line-height: 1.1 !important;
+  
   color: #fff;
   text-align: justify;
 }
 
-.about-text p {
-  margin: 0 0 15px 0; /* Space between paragraphs */
-}
+
 
 .about-text strong {
   font-weight: bold;
@@ -97,6 +95,7 @@
 
   .about-container {
     margin-top: 25%;
+    width: 100%;
   }
 
   .about-title {

@@ -48,7 +48,7 @@ const ShowDetailsPage = () => {
                   className="show-details-icon"
                   sx={{ color: "#ffbd01" }}
                 />{" "}
-                {show.date}
+                {show.date2}
               </Typography>
               <Typography>
                 <ScheduleIcon
@@ -105,7 +105,7 @@ const ShowDetailsPage = () => {
                           className="upcoming-event-icon"
                           sx={{ color: "#ffbd01" }}
                         />{" "}
-                        {upcomingShow.date}
+                        {upcomingShow.date2}
                       </Typography>
                       <Typography>
                         <ScheduleIcon

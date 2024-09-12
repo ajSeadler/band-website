@@ -6,6 +6,7 @@ import Streaming from "./Streaming";
 import MediaAndShowsGrid from "./MediaAndShowsGrid";
 import SpinnerBanner from "./SpinnerBanner";
 import ImageGrid from "./ImageGrid";
+import Countdown from "./Countdown";
 
 const Home = () => {
   const [showScrollDownText, setShowScrollDownText] = useState(true);
@@ -41,6 +42,7 @@ const Home = () => {
             border: "none",
           }}
         >
+          <Countdown />
           <MediaAndShowsGrid />
           <ImageGrid />
           <Streaming />

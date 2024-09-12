@@ -131,7 +131,7 @@ const Shows = () => {
                       </h6>
                       <Typography>
                         <EventIcon sx={{ color: "#ffbd01", marginRight: 1 }} />{" "}
-                        {show.date}
+                        {show.date2}
                       </Typography>
                       <Typography>
                         <ScheduleIcon

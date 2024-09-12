@@ -42,7 +42,7 @@ const UpcomingShows = () => {
             <h6 className="show-title">{show.title}</h6>
             <Typography>
               <EventIcon sx={{ color: "#ffbd01", marginRight: 1 }} />{" "}
-              {show.date}
+              {show.date2}
             </Typography>
             <Typography>
               <ScheduleIcon sx={{ color: "#4a90e2", marginRight: 1 }} />{" "}

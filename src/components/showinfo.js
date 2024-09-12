@@ -2,7 +2,8 @@ const shows = [
   {
     id: 1,
     title: "Stonecloud Stillwater",
-    date: "September 19th, 2024",
+    date: "2024-09-19T19:00:00",
+    date2:"September 19th 2024",
     time: "7:00PM - 9:00PM",
     price: "FREE",
     image: "/pics/stonecloud.jpeg",
@@ -13,7 +14,8 @@ const shows = [
   {
     id: 2,
     title: "White Rabbit",
-    date: "September 21st, 2024",
+    date: "2024-09-21T19:00:00",
+    date2:"September 21st 2024", // ISO 8601 format
     time: "TBD",
     price: "FREE",
     image: "/pics/compressed/greenblue.jpg",

@@ -18,7 +18,7 @@ const shows = [
     date2:"September 21st 2024", // ISO 8601 format
     time: "TBD",
     price: "FREE",
-    image: "/pics/compressed/greenblue.jpg",
+    image: "/pics/whiteRabiitShow.png",
     location: "219 N Klein Ave Oklahoma City, OK 73109",
     description: "Band of Brothers",
     bio: "Follow Disco Stranger to The White Rabbit for who only knows what...",

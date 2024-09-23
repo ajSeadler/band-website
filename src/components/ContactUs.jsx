@@ -108,18 +108,7 @@ const Contact = () => {
         {/* <Typography variant="h4" gutterBottom style={{ fontSize: "1.9rem", marginTop: "2rem", marginBottom: "1rem", color:'#000' }}>
           Booking:
         </Typography> */}
-        <Typography
-          variant="body1"
-          paragraph
-          style={{
-            fontFamily: "Bebas Neue",
-            color: "#000",
-            margin: "auto",
-            marginTop: "3%",
-          }}
-        >
-          Want to book us? Reach out and send an email below!
-        </Typography>
+        
         <form ref={form} onSubmit={sendEmail}>
           <TextField
             label="Name"
@@ -177,10 +166,10 @@ const Contact = () => {
             style={{
               marginTop: "2rem",
               margin: "10px",
-              backgroundColor: "transparent",
-              color: "#000",
-              border: "2px solid black",
-              borderRadius: "20px",
+              backgroundColor: "#ff652f",
+              color: "#fff",
+              fontFamily:'Oswald'
+              
             }}
           >
             Send

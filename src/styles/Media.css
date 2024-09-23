@@ -1,13 +1,21 @@
+/* Media.css */
+
+.media-container {
+  display: flex; /* Use flexbox to arrange items */
+  justify-content: center; /* Center the video card */
+  margin: 20px; /* Add margin for spacing */
+}
+
 .video-card {
-  width: 100% !important;
-  margin: auto !important;
+  width: 100% !important; /* Full width for the single video */
+  margin: 10px; /* Space between cards */
   border-radius: 20px !important;
   background-color: #121212 !important;
 }
 
 .video-card iframe {
-  width: 100%;
-  height: 25vh;
+  width: 55vw !important;
+  height: 60vh;
   border: none;
 }
 
@@ -19,19 +27,4 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .video-card {
-    width: calc(50% - 20px); /* 2 videos per row on tablets */
-  }
-}
 
-@media (max-width: 480px) {
-  .video-card {
-    width: 100% !important; /* 1 video per row on mobile */
-    margin-top: 10% !important;
-  }
-
-  .video-card iframe {
-    height: auto; /* Full height of the container */
-  }
-}

@@ -1,0 +1,36 @@
+/* ReleaseCTA.css */
+.release-cta {
+ 
+
+  padding: 20px;
+  text-align: center;
+  
+  max-width: 600px;
+  margin: 20px auto; /* Center the CTA */
+}
+
+.release-cta h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  color: #fff; /* Dark text color */
+}
+
+.release-cta p {
+  font-size: 1.2rem;
+  color: #fff; /* Slightly lighter text color */
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #ff4500; /* Button color */
+  color: white; /* Button text color */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff652f; /* Darker shade on hover */
+}

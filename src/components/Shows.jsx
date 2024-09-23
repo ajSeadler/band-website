@@ -26,7 +26,7 @@ const Shows = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, );
 
     return () => clearTimeout(timer);
   }, []);
@@ -72,9 +72,10 @@ const Shows = () => {
   return (
     <div className="shows-pg">
       <Paper elevation={0} className="shows-pg">
+        <h3 style={{color:"#fff", textAlign:'center'}}>No Upcoming Shows.</h3>
         <Slider {...sliderSettings} className="shows-carousel">
           {loading
-            ? Array.from({ length: 4 }).map((_, index) => (
+            ? Array.from({ length: 1 }).map((_, index) => (
                 <div key={index}>
                   <Card className="show-card">
                     <Skeleton variant="rectangular" width="100%" height={200} />

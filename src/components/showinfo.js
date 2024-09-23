@@ -1,28 +1,5 @@
 const shows = [
-  {
-    id: 1,
-    title: "Stonecloud Stillwater",
-    date: "2024-09-19T19:00:00",
-    date2:"September 19th 2024",
-    time: "7:00PM - 9:00PM",
-    price: "FREE",
-    image: "/pics/stonecloud.jpeg",
-    location: "917 S Husband St, Stillwater, OK 74074",
-    description: "An evening with Disco Stranger",
-    bio: "Join us at Stonecloud Brewing CO. in Stillwater, OK for an evening of good jams and good brews",
-  },
-  {
-    id: 2,
-    title: "White Rabbit",
-    date: "2024-09-21T19:00:00",
-    date2:"September 21st 2024", // ISO 8601 format
-    time: "TBD",
-    price: "FREE",
-    image: "/pics/whiteRabiitShow.png",
-    location: "219 N Klein Ave Oklahoma City, OK 73109",
-    description: "Band of Brothers",
-    bio: "Follow Disco Stranger to The White Rabbit for who only knows what...",
-  },
+ 
 
   // Add more shows as needed - here is a place holder
   //   {
@@ -39,6 +16,30 @@ const shows = [
 ];
 
 const pastShows = [
+  {
+    
+    title: "Stonecloud Stillwater",
+    date: "2024-09-19T19:00:00",
+    date2:"September 19th 2024",
+    time: "7:00PM - 9:00PM",
+    price: "FREE",
+    image: "/pics/stonecloud.jpeg",
+    location: "917 S Husband St, Stillwater, OK 74074",
+    description: "An evening with Disco Stranger",
+    bio: "Join us at Stonecloud Brewing CO. in Stillwater, OK for an evening of good jams and good brews",
+  },
+  {
+    
+    title: "White Rabbit",
+    date: "2024-09-21T19:00:00",
+    date2:"September 21st 2024", // ISO 8601 format
+    time: "TBD",
+    price: "FREE",
+    image: "/pics/whiteRabiitShow.png",
+    location: "219 N Klein Ave Oklahoma City, OK 73109",
+    description: "Band of Brothers",
+    bio: "Follow Disco Stranger to The White Rabbit for who only knows what...",
+  },
   {
     title: "Blue Note Lounge",
     date: "July 19th, 2024",

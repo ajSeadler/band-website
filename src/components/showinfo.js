@@ -19,8 +19,8 @@ const pastShows = [
   {
     
     title: "Stonecloud Stillwater",
-    date: "2024-09-19T19:00:00",
-    date2:"September 19th 2024",
+    date2: "2024-09-19T19:00:00",
+    date:"September 19th 2024",
     time: "7:00PM - 9:00PM",
     price: "FREE",
     image: "/pics/stonecloud.jpeg",
@@ -31,8 +31,8 @@ const pastShows = [
   {
     
     title: "White Rabbit",
-    date: "2024-09-21T19:00:00",
-    date2:"September 21st 2024", // ISO 8601 format
+    date2: "2024-09-21T19:00:00",
+    date:"September 21st 2024", // ISO 8601 format
     time: "TBD",
     price: "FREE",
     image: "/pics/whiteRabiitShow.png",

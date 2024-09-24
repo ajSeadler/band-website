@@ -1,6 +1,5 @@
 /* Basic reset */
-* 
-  {
+* {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
@@ -9,11 +8,6 @@
 .home {
   width: 100%;
   position: relative;
-}
-
-img {
-  width: 100vh !important;
-  height: auto !important;
 }
 
 /* General section styling */
@@ -26,49 +20,59 @@ img {
   text-align: center;
   color: white;
   position: relative;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  overflow: hidden;
 }
 
-/* Placeholder images using picsum.photos */
-.hero-section {
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  transform: translateZ(0);
+  will-change: background-position;
+}
+
+/* Hero Section for Desktop */
+.hero-section .parallax-bg {
   background-image: url("/pics/desk-home.JPG");
 }
 
-.shop-section {
+@media (max-width: 768px) {
+  .hero-section .parallax-bg {
+    background-image: url("/public/pics/fullband.JPG") !important;
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+}
+
+
+/* Shop Section */
+.shop-section .parallax-bg {
   background-image: url("/pics/compressed/greenblue.jpg");
-  min-height: 100vh; /* Allow the section to expand */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
 }
 
-.active-link {
-  color: white !important; /* Keep the color white when active */
-  text-decoration: none !important; /* Remove underline if desired */
-}
-
-
-.apparel-section {
+/* Apparel Section */
+.apparel-section .parallax-bg {
   background-image: url("/pics/compressed/bluePink.jpg");
 }
 
-.accessories-section {
+/* Accessories Section */
+.accessories-section .parallax-bg {
   background-image: url("/pics/compressed/home-end.JPG");
 }
 
-/* Content overlay styling */
 .content {
- 
-
-  border-radius: 10px;
+  position: relative;
+  z-index: 1;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-size: 48px;
   margin: 0;
   padding: 0;
@@ -97,7 +101,23 @@ p {
   background-color: #ff652f;
 }
 
-/* Smooth scrolling between sections */
 html {
   scroll-behavior: smooth;
+}
+
+.scroll-down {
+  margin-top: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }

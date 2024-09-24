@@ -11,6 +11,11 @@
   position: relative;
 }
 
+img {
+  width: 100vh !important;
+  height: auto !important;
+}
+
 /* General section styling */
 .section {
   height: 100vh;

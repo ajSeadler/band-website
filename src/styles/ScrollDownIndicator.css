@@ -1,10 +1,10 @@
 .scroll-down-indicator {
   position: absolute; /* Position it at the bottom of the hero section */
   bottom: 20px; /* Adjust as needed */
-  left: 50%;
   transform: translate(-50%, 0); /* Center horizontally */
   font-size: 2rem; /* Adjust size */
   color: white; /* Adjust color */
+  z-index: 3;
   cursor: pointer;
   animation: bounce 1s infinite; /* Optional bounce effect */
 }

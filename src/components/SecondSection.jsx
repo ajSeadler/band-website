@@ -1,5 +1,5 @@
-// ReleaseCTA.jsx
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from React Router
 import "../styles/ReleaseCTA.css";
 
 const SecondSection = () => {
@@ -9,7 +9,10 @@ const SecondSection = () => {
       <p>
         We're super DIY when it comes to our merch! If you're interested in any items, just shoot us an email, and we'll help you get what you need.
       </p>
-      <button className="cta-button">check it out</button>
+      {/* Use Link component for routing */}
+      <Link to="/merch" className="cta-button">
+        Check it out
+      </Link>
     </div>
   );
 };

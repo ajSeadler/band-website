@@ -10,6 +10,8 @@
   position: relative;
 }
 
+
+
 /* General section styling */
 .section {
   height: 100vh;
@@ -46,7 +48,7 @@
   .hero-section .parallax-bg {
     background-image: url("/public/pics/fullband.JPG") !important;
     width: 100vw !important;
-    z-index: 2;
+    z-index: auto;
     height: auto !important;
     background-size: cover !important;
     background-position: center center !important;

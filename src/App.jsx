@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import ShowDetailsPage from "./components/ShowDetailsPage";
 import MemberDetails from "./components/MemberDetails";
+import Merch from "./components/Merch"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/showdetails/:id" element={<ShowDetailsPage />} />
           <Route path="/member/:name" element={<MemberDetails />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/merch" element={<Merch />} />
         </Routes>
       </div>
       <Footer />

@@ -1,10 +1,10 @@
 .scroll-down-indicator {
-  position: absolute; /* Position it at the bottom of the hero section */
-  bottom: 20px; /* Adjust as needed */
-  transform: translate(-50%, 0); /* Center horizontally */
+  position: absolute; /* Change to absolute to ensure it's always positioned relative to the parent */
+  bottom: 20px; /* Adjust this as needed to place it above the bottom edge */
+  left: 50% !important; /* Center it horizontally */
+  transform: translateX(-50%); /* Offset the horizontal center */
   font-size: 2rem; /* Adjust size */
   color: white; /* Adjust color */
-  z-index: 3;
   cursor: pointer;
   animation: bounce 1s infinite; /* Optional bounce effect */
 }
@@ -20,3 +20,5 @@
     transform: translateY(-5px);
   }
 }
+
+

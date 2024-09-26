@@ -4,6 +4,7 @@ import "../styles/ReleaseCTA.css";
 
 const SecondSection = () => {
   return (
+    <>
     <div className="release-cta">
       <h2>MERCH</h2>
       <p>
@@ -14,6 +15,8 @@ const SecondSection = () => {
         Check it out
       </Link>
     </div>
+    
+    </>
   );
 };
 

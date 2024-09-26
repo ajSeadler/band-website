@@ -18,18 +18,6 @@ const shows = [
 const pastShows = [
   {
     
-    title: "Stonecloud Stillwater",
-    date2: "2024-09-19T19:00:00",
-    date:"September 19th 2024",
-    time: "7:00PM - 9:00PM",
-    price: "FREE",
-    image: "/pics/stonecloud.jpeg",
-    location: "917 S Husband St, Stillwater, OK 74074",
-    description: "An evening with Disco Stranger",
-    bio: "Join us at Stonecloud Brewing CO. in Stillwater, OK for an evening of good jams and good brews",
-  },
-  {
-    
     title: "White Rabbit",
     date2: "2024-09-21T19:00:00",
     date:"September 21st 2024", // ISO 8601 format
@@ -40,6 +28,19 @@ const pastShows = [
     description: "Band of Brothers",
     bio: "Follow Disco Stranger to The White Rabbit for who only knows what...",
   },
+  {
+    
+    title: "Stonecloud Stillwater",
+    date2: "2024-09-19T19:00:00",
+    date:"September 19th 2024",
+    time: "7:00PM - 9:00PM",
+    price: "FREE",
+    image: "/pics/stonecloud.jpeg",
+    location: "917 S Husband St, Stillwater, OK 74074",
+    description: "An evening with Disco Stranger",
+    bio: "Join us at Stonecloud Brewing CO. in Stillwater, OK for an evening of good jams and good brews",
+  },
+  
   {
     title: "Blue Note Lounge",
     date: "July 19th, 2024",

@@ -21,14 +21,18 @@ const Shows = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('.parallax-section');
-      sections.forEach(section => {
-        const scrollPosition = window.scrollY;
-        const sectionOffset = section.offsetTop;
+      const isMobile = window.innerWidth <= 768; // Check if the screen width is 768px or less
 
-        // Calculate the background position based on scroll
-        const backgroundPositionY = (scrollPosition - sectionOffset) * 0.5; // Adjust the speed
-        section.style.backgroundPositionY = `${backgroundPositionY}px`;
-      });
+      if (!isMobile) { // Only apply parallax effect on larger screens
+        sections.forEach(section => {
+          const scrollPosition = window.scrollY;
+          const sectionOffset = section.offsetTop;
+
+          // Calculate the background position based on scroll
+          const backgroundPositionY = (scrollPosition - sectionOffset) * 0.5; // Adjust the speed
+          section.style.backgroundPositionY = `${backgroundPositionY}px`;
+        });
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -60,7 +64,6 @@ const Shows = () => {
         <Typography className="show-info">
           <LocationOnIcon sx={{ color: "#d34836", marginRight: 1 }} /> {show.location}
         </Typography>
-        
       </div>
     </div>
   );

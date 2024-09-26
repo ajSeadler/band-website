@@ -8,7 +8,7 @@ const SecondSection = () => {
     <div className="release-cta">
       <h2>MERCH</h2>
       <p>
-        We're super DIY when it comes to our merch! If you're interested in any items, just shoot us an email, and we'll help you get what you need.
+        We're super DIY when it comes to our merch! If you're interested in any items, you'll have to come to a show.. check out what we have though!
       </p>
       {/* Use Link component for routing */}
       <Link to="/merch" className="cta-button">

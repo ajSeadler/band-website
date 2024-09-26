@@ -10,7 +10,13 @@
   position: relative;
 }
 
-
+.scroll-down {
+  position: absolute;
+  bottom: 20px; /* Position the scroll indicator 20px from the bottom */
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the scroll indicator horizontally */
+}
 
 /* General section styling */
 .section {

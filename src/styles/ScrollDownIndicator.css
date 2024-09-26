@@ -1,8 +1,8 @@
 .scroll-down-indicator {
-  position: absolute; /* Change to absolute to ensure it's always positioned relative to the parent */
-  bottom: 20px; /* Adjust this as needed to place it above the bottom edge */
-  left: 50% !important; /* Center it horizontally */
-  transform: translateX(-50%); /* Offset the horizontal center */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: end;
+  align-items: end;
   font-size: 2rem; /* Adjust size */
   color: white; /* Adjust color */
   cursor: pointer;

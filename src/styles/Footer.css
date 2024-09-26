@@ -1,53 +1,58 @@
-/* Footer.css */
-
 .styled-footer {
-  height: auto;
-  padding: 20px;
-  width: 100%;
-  background-color: #121212;
-  color: white;
+  background-color: #121212; /* Dark background */
+  padding: 40px 0;
+  color: #ffffff; /* White text */
+  text-align: center;
+  font-family: "Arial", sans-serif;
 }
 
 .footer-content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-}
-
-.copyright-text {
-  margin-bottom: 10px;
-  text-align: center;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px; /* Space between social icons */
+  margin-bottom: 20px;
 }
 
 .social-icons a {
-  color: #fff;
-  transition: color 0.3s ease-in-out;
+  color: #ffffff; /* White icons */
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #1db954;
+  color: #1db954; /* Spotify green hover effect */
 }
 
-/* Responsive Styles */
-@media (min-width: 768px) {
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+.copyright-text {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
-  .copyright-text {
-    text-align: center;
+  .social-icons {
+    margin-bottom: 10px;
   }
 
-  .social-icons {
-    justify-content: center;
+  .copyright-text {
+    font-size: 0.9rem;
   }
 }

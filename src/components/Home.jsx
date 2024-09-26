@@ -38,7 +38,9 @@ const Home = () => {
       {/* Hero Section */}
       <section className="section hero-section">
         <div className="parallax-bg"></div>
+        <div className="scroll-down">
         <ScrollDownIndicator />
+        </div>
       </section>
 
       {/* Shop Section */}

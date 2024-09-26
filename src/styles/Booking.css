@@ -1,16 +1,51 @@
 /* Contact.css */
 
 .booking-container {
-  padding: 40px 0;
+  position: relative; /* To position the background overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px !important;
   border-radius: 20px;
   font-family: "Arial", sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 800px;
+  background: rgba(255, 255, 255, 0.431) !important;
   margin: 0 auto;
+  /* background: url('/pics/compressed/drewdeepE.jpg') center/cover no-repeat;  */
+  z-index: 1; /* Ensure content is on top */
 }
 
+.booking-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.177); /* Black overlay with 50% opacity */
+  border-radius: 20px; /* Same as the container */
+  z-index: -1; /* Behind the content */
+}
+
+.date {
+  display: flex;
+  justify-content: center; /* Centers the date picker horizontally */
+  margin-top: 1rem;
+}
+
+.date-picker {
+  width: 70%; /* Sets the width of the date picker */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center; /* Centers the placeholder text */
+}
+
+
 .booking-container .form-container {
-  background: #fff;
+  
   padding: 30px;
   border-radius: 10px;
 }
@@ -69,6 +104,7 @@
 @media (max-width: 768px) {
   .booking-container {
     padding: 30px 0;
+    border-radius: 0;
   }
 
   .booking-container .form-container {

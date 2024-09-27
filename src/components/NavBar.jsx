@@ -174,9 +174,9 @@ const NavBar = () => {
               }}
               color="inherit"
               component={Link}
-              to="/about"
+              to="/merch"
             >
-              About
+              Merch
             </Button>
             <Button
               style={{

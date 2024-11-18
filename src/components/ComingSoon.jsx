@@ -20,6 +20,7 @@ const styles = {
     height: "100vh",
     width: "100%",
     backgroundColor: "#0D0D0D",
+
     color: "#FFFFFF",
     display: "flex",
     justifyContent: "center",
@@ -29,7 +30,9 @@ const styles = {
   },
   content: {
     maxWidth: "600px",
-    padding: "20px",
+    border: "solid 2px #fff",
+    borderRadius: "20px",
+    padding: "2rem",
   },
   heading: {
     fontSize: "3rem",

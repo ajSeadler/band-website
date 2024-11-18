@@ -9,16 +9,17 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import ShowDetailsPage from "./components/ShowDetailsPage";
 import MemberDetails from "./components/MemberDetails";
-import Merch from "./components/Merch"
+import Merch from "./components/Merch";
+import ComingSoon from "./components/ComingSoon";
 
 function App() {
   return (
     <div className="app">
-      <NavBar />
-      <ScrollToTop />
+      {/* <NavBar />
+      <ScrollToTop /> */}
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<ComingSoon />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/shows" element={<Shows />} />
           <Route path="/showdetails/:id" element={<ShowDetailsPage />} />
